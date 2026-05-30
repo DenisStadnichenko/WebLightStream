@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>LightStream OAuth</title>
-</head>
 <body>
-    <h1>Authorization completed</h1>
+<script>
+  const hash = window.location.hash.substring(1);
+  const search = window.location.search.substring(1);
 
-    <script>
-        document.body.innerHTML +=
-            "<pre>" + window.location.href + "</pre>";
-    </script>
+  const params = hash || search;
+
+  window.location.href = "lightstream://auth/twitch?" + params;
+</script>
+
+<p>Opening LightStream...</p>
 </body>
 </html>
