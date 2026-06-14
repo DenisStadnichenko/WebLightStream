@@ -2,50 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StadFlow - Professional Mobile Streaming</title>
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Twitch Authentication - StadFlow</title>
 </head>
 <body>
+<h1>Opening StadFlow...</h1>
+<p>If nothing happens, return to the app manually.</p>
 
-<div class="container">
-    <header>
-        <h1>StadFlow</h1>
-        <p class="subtitle">
-            The ultimate mobile live streaming application. Go live on Twitch, YouTube, and RTMP servers with professional-grade quality from your smartphone.
-        </p>
-        <a href="#" class="cta-button">Download Now</a>
-    </header>
+<script>
+    const hash = window.location.hash.substring(1);
+    const search = window.location.search.substring(1);
+    const params = hash || search;
 
-    <main>
-        <div class="features">
-            <div class="feature-card">
-                <h3>Multi-Platform</h3>
-                <p>Stream simultaneously or choose between Twitch, YouTube, or any custom RTMP destination.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Low Latency</h3>
-                <p>Optimized encoding engine ensures your viewers see the action as it happens with minimal delay.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Pro Settings</h3>
-                <p>Full control over bitrate, resolution, and frame rate to match your network conditions.</p>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 StadFlow. All rights reserved.</p>
-        <p>
-            <a href="/privacy.html">Privacy Policy</a>
-            <a href="/terms.html">Terms of Service</a>
-            <a href="/support.html">Support</a>
-        </p>
-    </footer>
-</div>
-
+    if (params) {
+        window.location.href = "stadflow://auth/twitch?" + params;
+    }
+</script>
 </body>
 </html>
