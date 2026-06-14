@@ -2,22 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404</title>
-    <link rel="stylesheet" href="/styles.css">
+    <title>Twitch Authentication - StadFlow</title>
 </head>
 <body>
+<h1>Authorizing StadFlow...</h1>
+<p>You can return to the app if it does not open automatically.</p>
 
-<div class="container">
-    <div class="content-page" style="text-align: center;">
-        <h1>404</h1>
-        <p class="subtitle">Oops! The page you're looking for doesn't exist.</p>
-        <p>
-            <a href="/index.html" class="cta-button">Return Home</a>
-        </p>
-    </div>
-</div>
+<script>
+    const params = new URLSearchParams(window.location.search);
 
+    const code = params.get("code");
+    const state = params.get("state");
+    const error = params.get("error");
 
+    let deepLink = "stadflow://auth/twitch";
+
+    if (error) {
+        deepLink += "?error=" + encodeURIComponent(error);
+    } else if (code) {
+        deepLink += "?code=" + encodeURIComponent(code);
+        if (state) {
+            deepLink += "&state=" + encodeURIComponent(state);
+        }
+    }
+
+    window.location.href = deepLink;
+</script>
 </body>
 </html>
