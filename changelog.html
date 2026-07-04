@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Help Center — StadFlow</title>
+  <title>Changelog — StadFlow</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
@@ -13,6 +13,12 @@
   <nav class="nav">
     <div class="wrap nav-inner">
       <a class="brand" href="index.html"><span class="brand-mark">▶</span><span>StadFlow</span></a>
+      <div class="nav-links">
+        <a href="index.html#features" data-i18n="nav_features">Features</a>
+        <a href="index.html#accounts" data-i18n="nav_accounts">Accounts</a>
+        <a href="index.html#screens" data-i18n="nav_screens">Screens</a>
+        <a href="index.html#faq" data-i18n="nav_faq">FAQ</a>
+      </div>
       <div class="lang">
         <button data-lang="en">EN</button><button data-lang="uk">UA</button><button data-lang="ru">RU</button>
       </div>
@@ -20,28 +26,36 @@
   </nav>
 
   <main class="section wrap">
-    <h1 style="text-align: center; margin-bottom: 60px;">Help Center</h1>
+    <h1 style="text-align: center; margin-bottom: 60px;" data-i18n="changelog_title">Changelog</h1>
 
-    <div class="grid cards">
-        <article>
-            <h3>Getting Started</h3>
-            <p>Learn how to set up your first stream, connect your camera, and choose the right bitrate for your mobile network.</p>
-        </article>
-        <article>
-            <h3>Account Setup</h3>
-            <p>Step-by-step guides for connecting your YouTube, Twitch, and Kick accounts via OAuth or Stream Keys.</p>
-        </article>
-        <article>
-            <h3>Advanced Protocols</h3>
-            <p>Detailed technical documentation for setting up custom SRT, RTSP, and UDP streaming destinations.</p>
-        </article>
+    <div class="changelog-entry">
+        <h3>v1.2.0 <time>— May 2024</time></h3>
+        <p data-i18n="changelog_latest">Latest Version</p>
+        <ul>
+            <li>Added Kick.com RTMP support.</li>
+            <li>Improved video encoding stability on 5G networks.</li>
+            <li>New UI for destination management.</li>
+            <li>Reduced battery consumption during long streams.</li>
+        </ul>
     </div>
 
-    <div class="content-page" style="margin-top: 60px; text-align: center;">
-        <h2>Still need help?</h2>
-        <p>Our support team is available 24/7 to help you with any technical issues.</p>
-        <p style="font-size: 24px; font-weight: 800; color: var(--pink); margin: 20px 0;">dvstadnichenko@gmail.com</p>
-        <a href="contact.html" class="btn">Contact Support</a>
+    <div class="changelog-entry">
+        <h3>v1.1.5 <time>— April 2024</time></h3>
+        <ul>
+            <li>Fixed audio sync issues with Bluetooth headsets.</li>
+            <li>Added 4K resolution support for high-end devices.</li>
+            <li>Improved YouTube OAuth refresh token handling.</li>
+        </ul>
+    </div>
+
+    <div class="changelog-entry">
+        <h3>v1.0.0 <time>— March 2024</time></h3>
+        <ul>
+            <li>Initial public release.</li>
+            <li>Multi-destination streaming support.</li>
+            <li>Twitch and YouTube integrations.</li>
+            <li>Internal audio capture.</li>
+        </ul>
     </div>
   </main>
 

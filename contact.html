@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Help Center — StadFlow</title>
+  <title>Contact — StadFlow</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
@@ -13,35 +13,33 @@
   <nav class="nav">
     <div class="wrap nav-inner">
       <a class="brand" href="index.html"><span class="brand-mark">▶</span><span>StadFlow</span></a>
+      <div class="nav-links">
+        <a href="index.html#features" data-i18n="nav_features">Features</a>
+        <a href="index.html#accounts" data-i18n="nav_accounts">Accounts</a>
+        <a href="index.html#screens" data-i18n="nav_screens">Screens</a>
+        <a href="index.html#faq" data-i18n="nav_faq">FAQ</a>
+      </div>
       <div class="lang">
         <button data-lang="en">EN</button><button data-lang="uk">UA</button><button data-lang="ru">RU</button>
       </div>
     </div>
   </nav>
 
-  <main class="section wrap">
-    <h1 style="text-align: center; margin-bottom: 60px;">Help Center</h1>
+  <main class="section wrap" style="text-align: center;">
+    <h1 data-i18n="contact_title">Contact Us</h1>
+    <p class="lead" data-i18n="contact_text">Have questions? We are here to help.</p>
 
-    <div class="grid cards">
-        <article>
-            <h3>Getting Started</h3>
-            <p>Learn how to set up your first stream, connect your camera, and choose the right bitrate for your mobile network.</p>
-        </article>
-        <article>
-            <h3>Account Setup</h3>
-            <p>Step-by-step guides for connecting your YouTube, Twitch, and Kick accounts via OAuth or Stream Keys.</p>
-        </article>
-        <article>
-            <h3>Advanced Protocols</h3>
-            <p>Detailed technical documentation for setting up custom SRT, RTSP, and UDP streaming destinations.</p>
-        </article>
-    </div>
+    <div class="content-page" style="margin-top: 40px; text-align: left;">
+        <h2>Email Support</h2>
+        <p>For technical support, feature requests, or business inquiries, please reach out to us at:</p>
+        <p style="font-size: 24px; font-weight: 800; color: var(--pink);">dvstadnichenko@gmail.com</p>
 
-    <div class="content-page" style="margin-top: 60px; text-align: center;">
-        <h2>Still need help?</h2>
-        <p>Our support team is available 24/7 to help you with any technical issues.</p>
-        <p style="font-size: 24px; font-weight: 800; color: var(--pink); margin: 20px 0;">dvstadnichenko@gmail.com</p>
-        <a href="contact.html" class="btn">Contact Support</a>
+        <h2 style="margin-top: 40px;">Community</h2>
+        <p>Join our community to stay updated on the latest features and share your experience with other creators.</p>
+        <div style="display: flex; gap: 20px; margin-top: 20px;">
+            <a href="#" class="btn secondary">Telegram</a>
+            <a href="#" class="btn secondary">Discord</a>
+        </div>
     </div>
   </main>
 
