@@ -59,4 +59,4 @@ function setLang(lang){
   document.querySelectorAll('[data-lang]').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));
 }
 document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
-setLang(localStorage.getItem('lang') || (navigator.language?.startsWith('ru')?'ru':navigator.language?.startsWith('uk')?'uk':'en'));
+setLang(localStorage.getItem('lang') || 'en');
