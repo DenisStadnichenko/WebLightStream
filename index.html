@@ -1,51 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StadFlow - Professional Mobile Streaming</title>
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StadFlow — Professional Mobile Streaming</title>
+  <meta name="description" content="StadFlow is a mobile streaming studio for Android. Stream to YouTube, Twitch, Kick and unlimited RTMP, RTSP, SRT or UDP destinations with multiple accounts per platform." />
+  <meta name="theme-color" content="#090218" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="bg-orbits"></div>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="StadFlow home"><span class="brand-mark">▶</span><span>StadFlow</span></a>
+      <div class="nav-links">
+        <a href="#features" data-i18n="nav_features">Features</a>
+        <a href="#accounts" data-i18n="nav_accounts">Accounts</a>
+        <a href="#screens" data-i18n="nav_screens">Screens</a>
+        <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      </div>
+      <div class="lang">
+        <button data-lang="en">EN</button><button data-lang="uk">UA</button><button data-lang="ru">RU</button>
+      </div>
+    </div>
+  </nav>
 
-<div class="container">
-    <header>
-        <h1>StadFlow</h1>
-        <p class="subtitle">
-            The ultimate mobile live streaming application. Go live on Twitch, YouTube, Kick, and RTMP servers with professional-grade quality from your smartphone.
-        </p>
-        <a href="#" class="cta-button">Download Now</a>
-    </header>
+  <header id="top" class="hero wrap">
+    <div class="hero-copy">
+      <div class="badge" data-i18n="badge">Android live streaming studio</div>
+      <h1 data-i18n="hero_title">Professional mobile streaming. One app. Unlimited destinations.</h1>
+      <p class="lead" data-i18n="hero_text">Stream to YouTube, Twitch, Kick and any RTMP, RTSP, SRT or UDP server. Add multiple accounts for every platform and go live to several channels at the same time.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#download" data-i18n="download">Download</a>
+        <a class="btn secondary" href="#features" data-i18n="explore">Explore features</a>
+      </div>
+      <div class="hero-pills"><span>4K</span><span>60 FPS</span><span>Multi Stream</span><span data-i18n="pill_accounts">Multiple Accounts</span><span>RTMP/SRT</span></div>
+    </div>
+    <div class="phone-cloud" aria-label="Application screenshots">
+      <div class="phone phone-a"><img src="assets/2d894fa5-97f9-4062-a704-6182da7123ea.png" alt="StadFlow home screen" /></div>
+      <div class="phone phone-b"><img src="assets/fa0760d0-217a-4290-bd45-6138ba160742.png" alt="StadFlow stream setup" /></div>
+      <div class="phone phone-c"><img src="assets/024594df-80b7-4dea-a711-4443524b90ca.png" alt="StadFlow live screen" /></div>
+    </div>
+  </header>
 
-    <main>
-        <div class="features">
-            <div class="feature-card">
-                <h3>Multi-Platform</h3>
-                <p>Stream simultaneously or choose between Twitch, YouTube, Kick, or any custom RTMP destination.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Low Latency</h3>
-                <p>Optimized encoding engine ensures your viewers see the action as it happens with minimal delay.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Pro Settings</h3>
-                <p>Full control over bitrate, resolution, and frame rate to match your network conditions.</p>
-            </div>
-        </div>
-    </main>
+  <section id="accounts" class="section wrap split">
+    <div>
+      <p class="eyebrow" data-i18n="accounts_eyebrow">Main advantage</p>
+      <h2 data-i18n="accounts_title">Several accounts for every service</h2>
+      <p class="section-text" data-i18n="accounts_text">Add two YouTube channels, several Twitch accounts, Kick accounts and custom servers. Enable only the destinations you need for each stream.</p>
+    </div>
+    <div class="accounts-card">
+      <div class="account-row youtube"><b>YouTube</b><span>Gaming</span><span>Work</span><span>Backup</span></div>
+      <div class="account-row twitch"><b>Twitch</b><span>Main</span><span>Second</span></div>
+      <div class="account-row kick"><b>Kick</b><span>Main</span></div>
+      <div class="account-row custom"><b>RTMP</b><span>Server 1</span><span>Server 2</span><span>∞</span></div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2024 StadFlow. All rights reserved.</p>
-        <p>
-            <a href="/privacy.html">Privacy Policy</a>
-            <a href="/terms.html">Terms of Service</a>
-            <a href="/support.html">Support</a>
-        </p>
-    </footer>
-</div>
+  <section id="features" class="section wrap">
+    <p class="eyebrow" data-i18n="features_eyebrow">Everything you need</p>
+    <h2 data-i18n="features_title">A complete mobile streaming studio</h2>
+    <div class="grid cards">
+      <article><span>🌐</span><h3 data-i18n="f_multi_title">Multi-platform streaming</h3><p data-i18n="f_multi_text">Broadcast to several platforms and custom destinations simultaneously.</p></article>
+      <article><span>👤</span><h3 data-i18n="f_accounts_title">Multiple accounts</h3><p data-i18n="f_accounts_text">Use multiple accounts from the same platform in one application.</p></article>
+      <article><span>📱</span><h3 data-i18n="f_sources_title">Camera, screen, file</h3><p data-i18n="f_sources_text">Stream from camera, screen capture or a local video file.</p></article>
+      <article><span>🎙️</span><h3 data-i18n="f_audio_title">Audio control</h3><p data-i18n="f_audio_text">Microphone, internal audio and mixed audio scenarios.</p></article>
+      <article><span>⚡</span><h3 data-i18n="f_quality_title">Professional quality</h3><p data-i18n="f_quality_text">Resolution, FPS, bitrate and audio bitrate are fully configurable.</p></article>
+      <article><span>🔐</span><h3 data-i18n="f_secure_title">Secure setup</h3><p data-i18n="f_secure_text">OAuth for supported platforms and hidden stream keys for custom destinations.</p></article>
+    </div>
+  </section>
 
+  <section class="section wrap platform-section">
+    <h2 data-i18n="platforms_title">Supported platforms and protocols</h2>
+    <div class="platforms"><span>YouTube</span><span>Twitch</span><span>Kick</span><span>RTMP</span><span>RTSP</span><span>SRT</span><span>UDP</span><span data-i18n="soon">More soon</span></div>
+  </section>
+
+  <section id="screens" class="section wrap">
+    <p class="eyebrow" data-i18n="screens_eyebrow">Design</p>
+    <h2 data-i18n="screens_title">Built for fast mobile control</h2>
+    <div class="screens">
+      <img src="assets/2d894fa5-97f9-4062-a704-6182da7123ea.png" alt="Home" />
+      <img src="assets/fa0760d0-217a-4290-bd45-6138ba160742.png" alt="Setup" />
+      <img src="assets/3c4ca90d-1f13-44f3-9202-1393483d6840.png" alt="Camera" />
+      <img src="assets/024594df-80b7-4dea-a711-4443524b90ca.png" alt="Live" />
+      <img src="assets/3ebdfa3f-5a8c-4685-bad0-11632dc8b646.png" alt="Destinations" />
+      <img src="assets/c8185214-9457-489a-9318-acbb2fc0e695.png" alt="Edit destination" />
+    </div>
+  </section>
+
+  <section class="section wrap comparison">
+    <h2 data-i18n="compare_title">Why creators choose StadFlow</h2>
+    <div class="compare-grid">
+      <div><b data-i18n="c1">Multiple accounts per platform</b><span>✅</span></div>
+      <div><b data-i18n="c2">Multiple destinations at once</b><span>✅</span></div>
+      <div><b>RTMP / RTSP / SRT / UDP</b><span>✅</span></div>
+      <div><b data-i18n="c4">Camera, screen and video file</b><span>✅</span></div>
+      <div><b data-i18n="c5">Mobile-first Android interface</b><span>✅</span></div>
+      <div><b data-i18n="c6">Local recording option</b><span>✅</span></div>
+    </div>
+  </section>
+
+  <section id="faq" class="section wrap faq">
+    <h2>FAQ</h2>
+    <details open><summary data-i18n="q1">Can I stream to multiple YouTube channels?</summary><p data-i18n="a1">Yes. Add several YouTube accounts and enable the channels you need.</p></details>
+    <details><summary data-i18n="q2">Can I use Twitch and Kick at the same time?</summary><p data-i18n="a2">Yes. StadFlow is designed for simultaneous streaming to multiple destinations.</p></details>
+    <details><summary data-i18n="q3">Can I stream to my own server?</summary><p data-i18n="a3">Yes. Use custom RTMP, RTSP, SRT or UDP destinations.</p></details>
+  </section>
+
+  <section id="download" class="section wrap cta">
+    <h2 data-i18n="cta_title">Ready to go live?</h2>
+    <p data-i18n="cta_text">Start streaming from your Android device to all your channels and accounts.</p>
+    <a class="btn" href="#" data-i18n="download_apk">Download APK</a>
+  </section>
+
+  <footer class="footer wrap">
+    <b>StadFlow</b>
+    <div><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></div>
+  </footer>
+
+  <script src="js/app.js"></script>
 </body>
 </html>
