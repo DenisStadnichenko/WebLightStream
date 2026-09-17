@@ -6,7 +6,7 @@
   <title>Kick Integration — StadFlow</title>
     <meta name="description" content="Connect your Kick account to StadFlow and stream from Android." />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="stylesheet" href="styles.css?v=4" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
 </head>
@@ -26,20 +26,31 @@
         <h1 style="color: var(--kick-green);">Kick.com Integration</h1>
         <p class="lead">Stream to the fastest-growing platform with high bitrate and low latency.</p>
 
-        <h2>How to Connect</h2>
+        <h2>How to connect</h2>
         <p>StadFlow connects to Kick natively via OAuth &mdash; no stream key needed:</p>
-        <ol style="color: var(--muted); line-height: 1.8; margin: 20px 0; padding-left: 20px;">
+        <ol>
             <li>In StadFlow, tap <b>Add Account</b> &rarr; <b>Kick</b>.</li>
             <li>Sign in to Kick in the browser and allow access.</li>
-            <li>You will be redirected back to StadFlow automatically.</li>
+            <li>You are redirected back to StadFlow automatically. If the app does not open, tap <b>Open StadFlow</b> on the page.</li>
         </ol>
-        <p>Prefer a stream key? You can still add Kick as a <b>Custom RTMP</b> destination using the URL and key from your Kick Creator Dashboard.</p>
+        <p>StadFlow fetches your ingest URL and stream key from Kick after sign-in and stores them encrypted on the device.</p>
+
+        <h2>Using a stream key instead</h2>
+        <p>Prefer a stream key? Add Kick as a <b>Custom RTMP</b> destination:</p>
+        <ol>
+            <li>Open your <b>Kick Creator Dashboard</b> &rarr; <b>Settings</b> &rarr; <b>Stream Key</b>.</li>
+            <li>Copy the <b>Stream URL</b> and <b>Stream Key</b>.</li>
+            <li>In StadFlow, tap <b>Add Account</b> &rarr; <b>Custom</b>, paste both values and save.</li>
+        </ol>
+
+        <h2>Recommended settings</h2>
+        <p>Kick accepts high bitrates. On a good connection use 1080p / 60 FPS / 8 Mbps; on mobile data start with 720p / 30 FPS / 2.5 Mbps.</p>
 
         <div style="background: rgba(83, 252, 24, 0.1); border: 1px solid var(--kick-green); padding: 20px; border-radius: 16px; margin-top: 40px;">
             <p style="margin: 0; color: var(--kick-green); font-weight: 800;">Tip: you can add several Kick accounts and stream to them at the same time.</p>
         </div>
 
-        <a href="index.html" class="btn secondary" style="margin-top: 40px;">&larr; Back to Home</a>
+        <a href="integrations.html" class="btn secondary" style="margin-top: 40px;">&larr; All integrations</a>
     </div>
   </main>
 
@@ -71,6 +82,6 @@
     </div>
   </footer>
 
-  <script src="js/app.js?v=2"></script>
+  <script src="js/app.js?v=4"></script>
 </body>
 </html>

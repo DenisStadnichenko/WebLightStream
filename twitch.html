@@ -6,7 +6,7 @@
   <title>Twitch Integration — StadFlow</title>
     <meta name="description" content="Connect your Twitch account to StadFlow and stream from Android." />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="stylesheet" href="styles.css?v=4" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
 </head>
@@ -26,23 +26,30 @@
         <h1 style="color: #a970ff;">Twitch Integration</h1>
         <p class="lead">Connect your Twitch account in one tap and start streaming with pro-level quality.</p>
 
-        <h2>Key Features</h2>
-        <ul style="color: var(--muted); line-height: 1.8; margin: 20px 0; padding-left: 20px;">
-            <li><b>Native OAuth Login:</b> Secure connection without sharing your password.</li>
-            <li><b>Ingest Selection:</b> Automatically chooses the best Twitch server for your location.</li>
-            <li><b>Chat Support:</b> Integrated chat overlay and notifications (Pro feature).</li>
-            <li><b>Stream Info:</b> Update your title and category directly from the app.</li>
+        <h2>How to connect</h2>
+        <ol>
+            <li>In StadFlow, tap <b>Add Account</b> &rarr; <b>Twitch</b>.</li>
+            <li>Sign in to Twitch in the browser and click <b>Authorize</b>.</li>
+            <li>You are redirected back to StadFlow automatically. If the app does not open, tap <b>Open StadFlow</b> on the page.</li>
+        </ol>
+        <p>StadFlow asks only for permission to read your stream key and basic profile. You can add as many Twitch accounts as you need and enable them per stream.</p>
+
+        <h2>Key features</h2>
+        <ul>
+            <li><b>Native OAuth login</b> &mdash; secure connection without sharing your password or stream key.</li>
+            <li><b>Automatic stream key</b> &mdash; fetched from Twitch after sign-in; you never have to copy it.</li>
+            <li><b>Token refresh</b> &mdash; log in once, StadFlow keeps the session alive.</li>
+            <li><b>Multiple accounts</b> &mdash; stream to your main and backup channels at the same time.</li>
         </ul>
 
         <h2>Troubleshooting</h2>
-        <p>If you experience issues connecting to Twitch:</p>
-        <ol style="color: var(--muted); line-height: 1.8; margin: 20px 0; padding-left: 20px;">
-            <li>Ensure you have <b>Two-Factor Authentication (2FA)</b> enabled on your Twitch account.</li>
-            <li>Check if your <b>Stream Key</b> hasn't been reset in the Twitch dashboard.</li>
-            <li>Try re-authenticating by removing and adding the account again in StadFlow.</li>
+        <ol>
+            <li>Twitch requires <b>Two-Factor Authentication (2FA)</b> to be enabled on your account before you can stream. Enable it at twitch.tv/settings/security.</li>
+            <li>If you reset your stream key in the Twitch dashboard, remove and re-add the account in StadFlow.</li>
+            <li>If the browser does not return you to the app, make sure StadFlow is allowed to open links (Android Settings &rarr; Apps &rarr; StadFlow &rarr; Open by default).</li>
         </ol>
 
-        <a href="index.html" class="btn secondary" style="margin-top: 40px;">&larr; Back to Home</a>
+        <a href="integrations.html" class="btn secondary" style="margin-top: 40px;">&larr; All integrations</a>
     </div>
   </main>
 
@@ -74,6 +81,6 @@
     </div>
   </footer>
 
-  <script src="js/app.js?v=2"></script>
+  <script src="js/app.js?v=4"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
   <title>FAQ — StadFlow</title>
     <meta name="description" content="Frequently asked questions about StadFlow, the Android live streaming studio." />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="stylesheet" href="styles.css?v=4" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
 </head>
@@ -28,7 +28,8 @@
   </nav>
 
   <main class="section wrap">
-    <h1 style="text-align: center; margin-bottom: 60px;">Frequently Asked Questions</h1>
+    <h1 class="page-title" data-i18n="faq_title">Frequently Asked Questions</h1>
+    <p class="lead page-lead" data-i18n="faq_lead">Can't find an answer? Check the <a href="support.html">Help Center</a> or <a href="contact.html">contact us</a>.</p>
 
     <div class="faq">
         <details open>
@@ -44,16 +45,40 @@
             <p data-i18n="a3">Yes. Use custom RTMP, RTSP, SRT or UDP destinations. Just provide the server URL and stream key in the destination settings.</p>
         </details>
         <details>
-            <summary>What is the maximum resolution supported?</summary>
-            <p>StadFlow supports up to 4K (2160p) resolution at 60 FPS, depending on your device's hardware capabilities and internet connection.</p>
+            <summary data-i18n="q4">What is the maximum resolution supported?</summary>
+            <p data-i18n="a4">StadFlow streams at up to 1080p at 60 FPS with a video bitrate of up to 8 Mbps. Use 720p / 30 FPS on mobile networks for the most stable stream.</p>
         </details>
         <details>
-            <summary>Does StadFlow support internal audio capture?</summary>
-            <p>Yes, on Android 10 and above, StadFlow can capture internal system audio. You can also mix it with your microphone input.</p>
+            <summary data-i18n="q5">Does StadFlow support internal audio capture?</summary>
+            <p data-i18n="a5">Yes. On Android 10 and newer StadFlow can capture system audio when streaming your screen, and mix it with the microphone.</p>
         </details>
         <details>
-            <summary>Is there a watermark in the free version?</summary>
-            <p>The free version includes a small "Streamed with StadFlow" watermark. You can remove it by upgrading to the Pro version.</p>
+            <summary data-i18n="q6">What is the difference between Free and Pro?</summary>
+            <p data-i18n="a6">Free lets you stream to 2 destinations at once and shows ads. You can unlock a third destination temporarily by watching an ad. Pro removes all ads and lets you stream to unlimited destinations.</p>
+        </details>
+        <details>
+            <summary data-i18n="q7">Is there a watermark?</summary>
+            <p data-i18n="a7">No. StadFlow never adds a watermark to your stream, on any plan.</p>
+        </details>
+        <details>
+            <summary data-i18n="q8">Can I record the stream locally?</summary>
+            <p data-i18n="a8">Yes. Turn on "Save stream" in Settings and every broadcast is also saved to the Movies/StadFlow folder on your device.</p>
+        </details>
+        <details>
+            <summary data-i18n="q9">Which Android version do I need?</summary>
+            <p data-i18n="a9">Android 8.0 (API 26) or newer. Internal audio capture requires Android 10 or newer.</p>
+        </details>
+        <details>
+            <summary data-i18n="q10">Does the stream stop when I lock the phone?</summary>
+            <p data-i18n="a10">No. StadFlow runs as a foreground service and keeps streaming while the screen is off or you use other apps. Disable battery optimisation for StadFlow to be safe.</p>
+        </details>
+        <details>
+            <summary data-i18n="q11">Where are my passwords and stream keys stored?</summary>
+            <p data-i18n="a11">You never enter platform passwords in StadFlow — sign-in happens in the browser via OAuth. Tokens and stream keys are stored encrypted on your device and are never uploaded to our servers.</p>
+        </details>
+        <details>
+            <summary data-i18n="q12">Why is the app not on Google Play?</summary>
+            <p data-i18n="a12">StadFlow is currently distributed as a direct APK download while we prepare the Google Play release. The APK on this site is always the latest build.</p>
         </details>
     </div>
   </main>
@@ -86,6 +111,6 @@
     </div>
   </footer>
 
-  <script src="js/app.js?v=2"></script>
+  <script src="js/app.js?v=4"></script>
 </body>
 </html>

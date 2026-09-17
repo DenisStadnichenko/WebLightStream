@@ -6,7 +6,7 @@
   <title>Help Center — StadFlow</title>
     <meta name="description" content="StadFlow help center and support." />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="stylesheet" href="styles.css?v=4" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
 </head>
@@ -22,27 +22,95 @@
   </nav>
 
   <main class="section wrap">
-    <h1 style="text-align: center; margin-bottom: 60px;">Help Center</h1>
+    <h1 class="page-title">Help Center</h1>
+    <p class="lead page-lead">Everything you need to set up StadFlow and go live from your Android device.</p>
 
-    <div class="grid cards">
+    <div class="grid cards" style="margin-top:0">
         <article>
+            <span>🚀</span>
             <h3>Getting Started</h3>
-            <p>Learn how to set up your first stream, connect your camera, and choose the right bitrate for your mobile network.</p>
+            <p>Install the app, add your first destination and start your first stream in under five minutes.</p>
+            <a class="more" href="#getting-started">Read guide &rarr;</a>
         </article>
         <article>
+            <span>👤</span>
             <h3>Account Setup</h3>
-            <p>Step-by-step guides for connecting your YouTube, Twitch, and Kick accounts via OAuth or Stream Keys.</p>
+            <p>Step-by-step guides for connecting YouTube, Twitch and Kick accounts, or any custom server.</p>
+            <a class="more" href="#accounts">Read guide &rarr;</a>
         </article>
         <article>
-            <h3>Advanced Protocols</h3>
-            <p>Detailed technical documentation for setting up custom SRT, RTSP, and UDP streaming destinations.</p>
+            <span>⚙️</span>
+            <h3>Quality &amp; Troubleshooting</h3>
+            <p>Recommended settings for mobile networks and fixes for the most common streaming problems.</p>
+            <a class="more" href="#troubleshooting">Read guide &rarr;</a>
         </article>
+    </div>
+
+    <div class="content-page" style="margin-top:80px">
+        <h2 id="getting-started">Getting started</h2>
+        <ol>
+            <li><b>Install the app.</b> Download <a href="stadflow.apk" download>stadflow.apk</a> and open it. Android will ask you to allow installation from this source &mdash; confirm it. StadFlow requires Android 8.0 or newer.</li>
+            <li><b>Add a destination.</b> Tap <b>Add Account</b> and choose YouTube, Twitch, Kick or Custom. Sign in via the browser or paste a stream key. See <a href="#accounts">Account setup</a> below.</li>
+            <li><b>Choose a source.</b> Pick the camera (front or rear), screen capture or a video file from your device. The app asks for the camera, microphone or screen-recording permission only for the source you actually use.</li>
+            <li><b>Set the quality.</b> Open <b>Settings</b> and pick a resolution (480p, 720p or 1080p), frame rate (30 or 60 FPS) and video bitrate (1, 2.5, 5 or 8 Mbps). Start with 720p / 30 FPS / 2.5 Mbps if you are on mobile data.</li>
+            <li><b>Go live.</b> Enable the destinations you want for this stream and tap <b>Start Stream</b>. A persistent notification shows the stream status; you can keep using your phone while streaming.</li>
+        </ol>
+        <div class="note"><p><b>Tip:</b> turn on <b>Save stream</b> in Settings to keep a local copy of every broadcast. Recordings are stored in <b>Movies/StadFlow</b> on your device.</p></div>
+
+        <h2 id="accounts">Account setup</h2>
+        <h3>YouTube</h3>
+        <p>StadFlow signs in with your Google account via OAuth and creates broadcasts for you &mdash; no stream key needed. You can add several Google accounts and pick which channels go live each time. <a href="youtube.html">Full YouTube guide &rarr;</a></p>
+        <h3>Twitch</h3>
+        <p>Tap <b>Add Account &rarr; Twitch</b>, authorize in the browser and you will be sent back to the app automatically. Twitch requires two-factor authentication to be enabled on your account before you can stream. <a href="twitch.html">Full Twitch guide &rarr;</a></p>
+        <h3>Kick</h3>
+        <p>Tap <b>Add Account &rarr; Kick</b> and sign in. StadFlow fetches your stream key automatically. You can also add Kick as a custom RTMP destination if you prefer. <a href="kick.html">Full Kick guide &rarr;</a></p>
+        <h3>Custom RTMP / RTMPS / RTSP / SRT / UDP</h3>
+        <p>Tap <b>Add Account &rarr; Custom</b>, give the destination a name and paste the server URL and stream key from your provider. Typical formats:</p>
+        <table>
+            <tr><th>Protocol</th><th>URL example</th></tr>
+            <tr><td>RTMP</td><td><code>rtmp://live.example.com/app</code> + stream key</td></tr>
+            <tr><td>RTMPS</td><td><code>rtmps://live.example.com:443/app</code> + stream key</td></tr>
+            <tr><td>SRT</td><td><code>srt://ingest.example.com:9000?streamid=YOUR_ID</code></td></tr>
+            <tr><td>RTSP</td><td><code>rtsp://server.example.com:8554/stream</code></td></tr>
+            <tr><td>UDP</td><td><code>udp://192.168.1.10:5000</code></td></tr>
+        </table>
+        <p>This is how you stream to Restream, Facebook Live, Trovo, VK Video, OBS on a PC or your own media server. Stream keys are stored encrypted on the device and are never shown in full once saved.</p>
+
+        <h2 id="troubleshooting">Quality &amp; troubleshooting</h2>
+        <h3>Recommended settings</h3>
+        <table>
+            <tr><th>Connection</th><th>Resolution</th><th>FPS</th><th>Bitrate</th></tr>
+            <tr><td>4G / weak Wi&#8209;Fi</td><td>720p</td><td>30</td><td>1&ndash;2.5 Mbps</td></tr>
+            <tr><td>5G / good Wi&#8209;Fi</td><td>1080p</td><td>30&ndash;60</td><td>5 Mbps</td></tr>
+            <tr><td>Fast Wi&#8209;Fi / Ethernet</td><td>1080p</td><td>60</td><td>8 Mbps</td></tr>
+        </table>
+        <p>When streaming to several destinations at once, the same encoded video is sent to each one, so your upload must handle <b>bitrate &times; number of destinations</b>.</p>
+        <h3>Stream keeps dropping or freezing</h3>
+        <ul>
+            <li>Lower the bitrate one step and switch to 30 FPS.</li>
+            <li>Disable battery optimisation for StadFlow in Android settings so the system does not pause the stream in the background.</li>
+            <li>StadFlow reconnects to each destination automatically when the connection is lost; if a platform still shows you offline, stop and start the stream.</li>
+        </ul>
+        <h3>No sound or wrong audio source</h3>
+        <ul>
+            <li>Check the audio source in Settings: microphone, internal audio or Bluetooth headset.</li>
+            <li>Internal (system) audio capture is available on Android 10 and newer and only for the screen source.</li>
+            <li>Some apps and DRM-protected content block internal audio capture &mdash; this is an Android restriction.</li>
+        </ul>
+        <h3>Twitch or Kick login fails</h3>
+        <ul>
+            <li>Make sure the browser returned you to StadFlow. If not, tap <b>Open StadFlow</b> on the authorization page.</li>
+            <li>Remove the account in StadFlow and add it again to refresh the tokens.</li>
+            <li>Twitch: enable 2FA on your Twitch account, it is required for streaming.</li>
+        </ul>
+        <h3>Free plan limits</h3>
+        <p>The free plan lets you stream to <b>2 destinations at once</b>. You can unlock a third one temporarily by watching an ad, or upgrade to <a href="pricing.html">Pro</a> for unlimited destinations and no ads.</p>
     </div>
 
     <div class="content-page" style="margin-top: 60px; text-align: center;">
         <h2>Still need help?</h2>
-        <p>Our support team is available 24/7 to help you with any technical issues.</p>
-        <p style="font-size: 24px; font-weight: 800; color: var(--pink); margin: 20px 0;">dvstadnichenko@gmail.com</p>
+        <p>Write to us and we will get back to you as soon as possible.</p>
+        <p style="font-size: 24px; font-weight: 800; color: var(--pink); margin: 20px 0;"><a href="mailto:dvstadnichenko@gmail.com" style="text-decoration:none">dvstadnichenko@gmail.com</a></p>
         <a href="contact.html" class="btn">Contact Support</a>
     </div>
   </main>
@@ -75,6 +143,6 @@
     </div>
   </footer>
 
-  <script src="js/app.js?v=2"></script>
+  <script src="js/app.js?v=4"></script>
 </body>
 </html>
