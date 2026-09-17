@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /auth/
+Sitemap: https://stadflow-el-moloko-s-projects.vercel.app/sitemap.xml

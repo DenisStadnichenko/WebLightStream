@@ -1,1 +1,54 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Authorizing Twitch — StadFlow</title><link rel="stylesheet" href="../../styles.css"></head><body><main class="section wrap cta"><h1>Authorizing Twitch...</h1><p>If StadFlow does not open automatically, use the button below.</p><a id="manual-link" class="btn" href="#">Open StadFlow</a></main><script>const p=location.hash.substring(1)||location.search.substring(1);const link='stadflow://auth/twitch?'+p;document.getElementById('manual-link').href=link;if(p){location.href=link;setTimeout(()=>location.href=link,1800);}</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <title>Authorizing Twitch — StadFlow</title>
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <div class="bg-orbits"></div>
+  <main class="section wrap cta">
+    <h1 id="title">Authorizing Twitch...</h1>
+    <p id="msg">If StadFlow does not open automatically, use the button below.</p>
+    <a id="manual-link" class="btn" href="#">Open StadFlow</a>
+    <p id="fallback" style="margin-top:24px;display:none">Don't have the app? <a href="../../stadflow.apk" download>Download StadFlow APK</a></p>
+  </main>
+  <script>
+  (function () {
+    // Twitch (implicit flow) returns the token in the #fragment, Kick (PKCE) and
+    // OAuth errors return params in the ?query. Merge both so nothing is lost.
+    var params = new URLSearchParams(location.search);
+    new URLSearchParams(location.hash.replace(/^#/, '')).forEach(function (v, k) { params.set(k, v); });
+    var query = params.toString();
+    var link = 'stadflow://auth/twitch' + (query ? '?' + query : '');
+    var btn = document.getElementById('manual-link');
+    var title = document.getElementById('title');
+    var msg = document.getElementById('msg');
+    btn.href = link;
+
+    if (!query) {
+      title.textContent = 'Twitch authorization';
+      msg.textContent = 'This page is opened by StadFlow during Twitch sign-in. Please start the authorization from the app.';
+      btn.style.display = 'none';
+      return;
+    }
+
+    if (params.get('error')) {
+      title.textContent = 'Twitch authorization failed';
+      msg.textContent = params.get('error_description') || params.get('error');
+    }
+
+    // Do not leave the token in browser history: strip it from the address bar.
+    try { history.replaceState(null, '', location.pathname); } catch (e) {}
+
+    document.getElementById('fallback').style.display = '';
+    location.href = link;
+    setTimeout(function () { location.href = link; }, 1500);
+  })();
+  </script>
+</body>
+</html>
