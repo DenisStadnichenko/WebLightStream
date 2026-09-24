@@ -21,7 +21,7 @@
   <meta name="twitter:image" content="https://stadflow-el-moloko-s-projects.vercel.app/assets/og.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=8" />
+  <link rel="stylesheet" href="styles.css?v=15" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
@@ -45,9 +45,9 @@
 
   <main class="section wrap">
     <h1 style="text-align: center; margin-bottom: 20px;" data-i18n="nav_integrations">Integrations</h1>
-    <p class="lead" style="text-align: center; margin-bottom: 60px;">Connect with your favorite platforms seamlessly.</p>
+    <p class="lead" style="text-align: center; margin-bottom: 60px;" data-i18n="int_lead">Connect with your favorite platforms seamlessly.</p>
 
-    <div class="grid cards">
+    <div class="grid cards" data-i18n-block="cards">
       <article>
         <h3>YouTube</h3>
         <p>Sign in with Google. StadFlow creates the broadcast, sets the privacy and goes live for you. Add as many channels as you need.</p>
@@ -88,17 +88,18 @@
       <h4 data-i18n="footer_support">Support</h4>
       <a href="faq.html" data-i18n="nav_faq">FAQ</a>
       <a href="contact.html" data-i18n="contact_title">Contact</a>
-      <a href="support.html">Help Center</a>
+      <a href="support.html" data-i18n="support_title">Help Center</a>
     </div>
     <div>
       <h4 data-i18n="footer_legal">Legal</h4>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Service</a>
-      <a href="eula.html">EULA</a>
-      <a href="cookies.html">Cookie Policy</a>
+      <a href="privacy.html" data-i18n="l_privacy">Privacy Policy</a>
+      <a href="terms.html" data-i18n="l_terms">Terms of Service</a>
+      <a href="eula.html" data-i18n="l_eula">EULA</a>
+      <a href="cookies.html" data-i18n="l_cookies">Cookie Policy</a>
     </div>
   </footer>
 
-  <script src="js/app.js?v=8"></script>
+  <script src="js/i18n/integrations.js?v=15"></script>
+  <script src="js/app.js?v=15"></script>
 </body>
 </html>

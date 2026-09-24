@@ -21,7 +21,7 @@
   <meta name="twitter:image" content="https://stadflow-el-moloko-s-projects.vercel.app/assets/og.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=8" />
+  <link rel="stylesheet" href="styles.css?v=15" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
@@ -38,10 +38,10 @@
   </nav>
 
   <main class="section wrap">
-    <h1 class="page-title">Help Center</h1>
-    <p class="lead page-lead">Everything you need to set up StadFlow and go live from your Android device.</p>
+    <h1 class="page-title" data-i18n="support_title">Help Center</h1>
+    <p class="lead page-lead" data-i18n="support_lead">Everything you need to set up StadFlow and go live from your Android device.</p>
 
-    <div class="grid cards" style="margin-top:0">
+    <div class="grid cards" style="margin-top:0" data-i18n-block="cards">
         <article>
             <span>🚀</span>
             <h3>Getting Started</h3>
@@ -62,7 +62,7 @@
         </article>
     </div>
 
-    <div class="content-page" style="margin-top:80px">
+    <div class="content-page" style="margin-top:80px" data-i18n-block="main">
         <h2 id="getting-started">Getting started</h2>
         <ol>
             <li><b>Install the app.</b> Download <a href="stadflow.apk" download>stadflow.apk</a> and open it. Android will ask you to allow installation from this source &mdash; confirm it. StadFlow requires Android 8.0 or newer.</li>
@@ -123,7 +123,7 @@
         <p>The free plan lets you stream to <b>2 destinations at once</b>. You can unlock a third one temporarily by watching an ad, or upgrade to <a href="pricing.html">Pro</a> for unlimited destinations and no ads.</p>
     </div>
 
-    <div class="content-page" style="margin-top: 60px; text-align: center;">
+    <div class="content-page" style="margin-top: 60px; text-align: center;" data-i18n-block="foot">
         <h2>Still need help?</h2>
         <p>Write to us and we will get back to you as soon as possible.</p>
         <p style="font-size: 24px; font-weight: 800; color: var(--pink); margin: 20px 0;"><a href="mailto:dvstadnichenko@gmail.com" style="text-decoration:none">dvstadnichenko@gmail.com</a></p>
@@ -148,17 +148,18 @@
       <h4 data-i18n="footer_support">Support</h4>
       <a href="faq.html" data-i18n="nav_faq">FAQ</a>
       <a href="contact.html" data-i18n="contact_title">Contact</a>
-      <a href="support.html">Help Center</a>
+      <a href="support.html" data-i18n="support_title">Help Center</a>
     </div>
     <div>
       <h4 data-i18n="footer_legal">Legal</h4>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Service</a>
-      <a href="eula.html">EULA</a>
-      <a href="cookies.html">Cookie Policy</a>
+      <a href="privacy.html" data-i18n="l_privacy">Privacy Policy</a>
+      <a href="terms.html" data-i18n="l_terms">Terms of Service</a>
+      <a href="eula.html" data-i18n="l_eula">EULA</a>
+      <a href="cookies.html" data-i18n="l_cookies">Cookie Policy</a>
     </div>
   </footer>
 
-  <script src="js/app.js?v=8"></script>
+  <script src="js/i18n/support.js?v=15"></script>
+  <script src="js/app.js?v=15"></script>
 </body>
 </html>

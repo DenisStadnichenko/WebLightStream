@@ -21,7 +21,7 @@
   <meta name="twitter:image" content="https://stadflow-el-moloko-s-projects.vercel.app/assets/og.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=8" />
+  <link rel="stylesheet" href="styles.css?v=15" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
@@ -31,18 +31,27 @@
   <nav class="nav">
     <div class="wrap nav-inner">
       <a class="brand" href="index.html"><span class="brand-mark">▶</span><span>StadFlow</span></a>
+      <div class="nav-links">
+        <a href="index.html#features" data-i18n="nav_features">Features</a>
+        <a href="index.html#accounts" data-i18n="nav_accounts">Accounts</a>
+        <a href="index.html#screens" data-i18n="nav_screens">Screens</a>
+        <a href="index.html#faq" data-i18n="nav_faq">FAQ</a>
+      </div>
+      <div class="lang">
+        <button data-lang="en">EN</button><button data-lang="uk">UA</button><button data-lang="ru">RU</button>
+      </div>
     </div>
   </nav>
 
   <main class="section wrap">
-    <div class="legal-nav">
-        <a href="privacy.html">Privacy Policy</a>
+    <div class="legal-nav" data-i18n-block="nav">
+        <a href="privacy.html" data-i18n="l_privacy">Privacy Policy</a>
         <a href="terms.html" class="active">Terms of Service</a>
-        <a href="eula.html">EULA</a>
-        <a href="cookies.html">Cookie Policy</a>
+        <a href="eula.html" data-i18n="l_eula">EULA</a>
+        <a href="cookies.html" data-i18n="l_cookies">Cookie Policy</a>
     </div>
 
-    <div class="content-page">
+    <div class="content-page" data-i18n-block="main">
         <h1>Terms of Service</h1>
         <p>Last updated: September 17, 2026</p>
 
@@ -76,6 +85,35 @@
     </div>
   </main>
 
-  <script src="js/app.js?v=8"></script>
+  <footer class="footer wrap">
+    <div>
+      <a class="brand" href="index.html"><b>StadFlow</b></a>
+      <p data-i18n="copyright">© 2026 StadFlow. All rights reserved.</p>
+    </div>
+    <div>
+      <h4 data-i18n="footer_product">Product</h4>
+      <a href="features.html" data-i18n="nav_features">Features</a>
+      <a href="pricing.html" data-i18n="nav_pricing">Pricing</a>
+      <a href="integrations.html" data-i18n="nav_integrations">Integrations</a>
+      <a href="roadmap.html" data-i18n="roadmap_title">Roadmap</a>
+      <a href="changelog.html" data-i18n="changelog_title">Changelog</a>
+    </div>
+    <div>
+      <h4 data-i18n="footer_support">Support</h4>
+      <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+      <a href="contact.html" data-i18n="contact_title">Contact</a>
+      <a href="support.html" data-i18n="support_title">Help Center</a>
+    </div>
+    <div>
+      <h4 data-i18n="footer_legal">Legal</h4>
+      <a href="privacy.html" data-i18n="l_privacy">Privacy Policy</a>
+      <a href="terms.html" data-i18n="l_terms">Terms of Service</a>
+      <a href="eula.html" data-i18n="l_eula">EULA</a>
+      <a href="cookies.html" data-i18n="l_cookies">Cookie Policy</a>
+    </div>
+  </footer>
+
+  <script src="js/i18n/terms.js?v=15"></script>
+  <script src="js/app.js?v=15"></script>
 </body>
 </html>
