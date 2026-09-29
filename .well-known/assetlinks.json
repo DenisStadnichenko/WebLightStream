@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "ua.od.stadflow",
+      "sha256_cert_fingerprints": [
+        "24:70:AE:30:C1:DE:B0:1F:0A:3D:F9:11:1A:D2:0C:73:15:71:CC:23:18:69:4D:CD:8B:0B:7E:B5:3E:CD:E4:72",
+        "97:48:B0:A0:9C:E8:40:74:F8:9A:9A:A7:A7:E6:CD:9B:2B:18:03:36:65:7B:9E:AB:D8:84:45:E1:80:BA:F0:CA"
+      ]
+    }
+  }
+]
