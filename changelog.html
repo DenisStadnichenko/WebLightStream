@@ -21,7 +21,7 @@
   <meta name="twitter:image" content="https://stadflow-el-moloko-s-projects.vercel.app/assets/og.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=19" />
+  <link rel="stylesheet" href="styles.css?v=21" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
@@ -47,20 +47,34 @@
     <h1 class="page-title" data-i18n="changelog_title">Changelog</h1>
     <p class="lead page-lead" data-i18n="changelog_lead">Release history of the StadFlow Android app.</p>
 
-    <div data-i18n-block="entries"><div class="changelog-entry">
-        <h3>v1.0 <time>— September 2026</time></h3>
+    <div data-i18n-block="entries">
+    <div class="changelog-entry">
+        <h3>v1.0.0 <time>— October 2026</time></h3>
         <p data-i18n="changelog_latest">Latest Version</p>
+        <ul>
+            <li>Scene mixer: camera, chat, a widget page and a cover plate as layers, dragged, resized and reordered on the picture.</li>
+            <li>Every layer has two independent audiences — what the viewers see and what the streamer sees.</li>
+            <li>A panel over the game: start, stop, microphone, destination health and chat without leaving the game.</li>
+            <li>YouTube and Twitch chat read in the app and answered while live, each account in one stream of messages.</li>
+            <li>The bitrate follows the network instead of demanding a fixed number.</li>
+            <li>Heat and battery are watched: the quality steps down and the streamer is warned before the viewers notice.</li>
+            <li>Game sound is sent while the headset keeps working.</li>
+            <li>A destination that does not answer ends with a message after twenty seconds instead of spinning forever.</li>
+            <li>Destinations can be removed, and the streamer's own overlays stay out of the broadcast.</li>
+            <li>Free and PRO: two destinations, two layers and one chat account per platform on Free; PRO lifts all three and removes the ads as a one-time purchase.</li>
+        </ul>
+    </div>
+
+    <div class="changelog-entry">
+        <h3>v1.0 <time>— September 2026</time></h3>
         <ul>
             <li>Native Kick.com sign-in via OAuth with automatic stream key retrieval.</li>
             <li>Twitch sign-in switched to authorization code flow with automatic token refresh.</li>
             <li>Local recording: save every stream to Movies/StadFlow.</li>
             <li>Automatic reconnect of every destination on connection loss.</li>
-            <li>Permissions are now requested only for the source you use (camera, microphone, screen).</li>
+            <li>Permissions are now requested only for the source you use.</li>
             <li>Bluetooth headset audio support and camera zoom.</li>
-            <li>Landscape layout for all screens.</li>
-            <li>Free / Pro plans: 2 simultaneous destinations on Free, unlimited on Pro.</li>
             <li>Ukrainian and Russian translations.</li>
-            <li>Stability and security fixes for YouTube broadcasts and destination management.</li>
         </ul>
     </div>
 
@@ -73,7 +87,8 @@
             <li>Internal audio capture on Android 10+.</li>
             <li>Resolution, FPS and bitrate settings.</li>
         </ul>
-    </div></div>
+    </div>
+    </div>
   </main>
 
   <footer class="footer wrap">
@@ -104,7 +119,7 @@
     </div>
   </footer>
 
-  <script src="js/i18n/changelog.js?v=19"></script>
-  <script src="js/app.js?v=19"></script>
+  <script src="js/i18n/changelog.js?v=21"></script>
+  <script src="js/app.js?v=21"></script>
 </body>
 </html>

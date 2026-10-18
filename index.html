@@ -4,28 +4,28 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>StadFlow — Professional Mobile Streaming</title>
-  <meta name="description" content="StadFlow is a mobile streaming studio for Android. Stream to YouTube, Twitch, Kick and unlimited RTMP, RTSP, SRT or UDP destinations with multiple accounts per platform." />
+  <meta name="description" content="StadFlow is a mobile streaming studio for Android built for game streaming: a panel over the game, a scene mixer with layers, chat read and answered in the app, and unlimited RTMP, RTSP, SRT or UDP destinations." />
   <meta name="theme-color" content="#090218" />
     <link rel="canonical" href="https://stadflow-el-moloko-s-projects.vercel.app/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="StadFlow" />
   <meta property="og:title" content="StadFlow — Professional Mobile Streaming" />
-  <meta property="og:description" content="StadFlow is a mobile streaming studio for Android. Stream to YouTube, Twitch, Kick and unlimited RTMP, RTSP, SRT or UDP destinations with multiple accounts per platform." />
+  <meta property="og:description" content="StadFlow is a mobile streaming studio for Android built for game streaming: a panel over the game, a scene mixer with layers, chat read and answered in the app, and unlimited RTMP, RTSP, SRT or UDP destinations." />
   <meta property="og:url" content="https://stadflow-el-moloko-s-projects.vercel.app/" />
   <meta property="og:image" content="https://stadflow-el-moloko-s-projects.vercel.app/assets/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="StadFlow — Professional Mobile Streaming" />
-  <meta name="twitter:description" content="StadFlow is a mobile streaming studio for Android. Stream to YouTube, Twitch, Kick and unlimited RTMP, RTSP, SRT or UDP destinations with multiple accounts per platform." />
+  <meta name="twitter:description" content="StadFlow is a mobile streaming studio for Android built for game streaming: a panel over the game, a scene mixer with layers, chat read and answered in the app, and unlimited RTMP, RTSP, SRT or UDP destinations." />
   <meta name="twitter:image" content="https://stadflow-el-moloko-s-projects.vercel.app/assets/og.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=19" />
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "StadFlow", "operatingSystem": "Android 8.0+", "applicationCategory": "MultimediaApplication", "description": "Mobile live streaming studio for Android. Stream to YouTube, Twitch, Kick and unlimited RTMP, RTSP, SRT or UDP destinations with multiple accounts per platform.", "url": "https://stadflow-el-moloko-s-projects.vercel.app/", "downloadUrl": "https://stadflow-el-moloko-s-projects.vercel.app/stadflow.apk", "softwareVersion": "1.0", "image": "https://stadflow-el-moloko-s-projects.vercel.app/assets/og.png", "offers": [{"@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Free"}, {"@type": "Offer", "price": "2.99", "priceCurrency": "USD", "name": "Pro"}]}</script>
+  <link rel="stylesheet" href="styles.css?v=21" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "StadFlow", "operatingSystem": "Android 8.0+", "applicationCategory": "MultimediaApplication", "description": "Mobile live streaming studio for Android built for game streaming: a panel over the game, a scene mixer with layers, chat read and answered in the app, and unlimited RTMP, RTSP, SRT or UDP destinations.", "url": "https://stadflow-el-moloko-s-projects.vercel.app/", "downloadUrl": "https://stadflow-el-moloko-s-projects.vercel.app/stadflow.apk", "softwareVersion": "1.0", "image": "https://stadflow-el-moloko-s-projects.vercel.app/assets/og.png", "offers": [{"@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Free"}, {"@type": "Offer", "price": "2.99", "priceCurrency": "USD", "name": "PRO", "category": "one-time purchase"}]}</script>
 </head>
 <body>
   <div class="bg-orbits"></div>
@@ -53,7 +53,7 @@
         <a class="btn" href="#download" data-i18n="download">Download</a>
         <a class="btn secondary" href="#features" data-i18n="explore">Explore features</a>
       </div>
-      <div class="hero-pills"><span>1080p</span><span>60 FPS</span><span>Multi Stream</span><span data-i18n="pill_accounts">Multiple Accounts</span><span>RTMP/SRT</span></div>
+      <div class="hero-pills"><span data-i18n="pill_game">Game streaming</span><span data-i18n="pill_mixer">Scene mixer</span><span data-i18n="pill_chat">Chat in app</span><span>1080p 60 FPS</span><span data-i18n="pill_accounts">Multiple Accounts</span><span>RTMP/SRT</span></div>
     </div>
     <div class="phone-cloud" aria-label="Application screenshots">
       <div class="phone phone-a"><img width="320" height="720" fetchpriority="high" decoding="async" src="assets/2d894fa5-97f9-4062-a704-6182da7123ea.webp" alt="StadFlow home screen" /></div>
@@ -80,18 +80,21 @@
     <p class="eyebrow" data-i18n="features_eyebrow">Everything you need</p>
     <h2 data-i18n="features_title">A complete mobile streaming studio</h2>
     <div class="grid cards">
+      <article><span>🎮</span><h3 data-i18n="f_game_title">Built for streaming games</h3><p data-i18n="f_game_text">A panel over the game: start, stop, mute and read the chat without leaving what your viewers are watching.</p></article>
+      <article><span>🎛️</span><h3 data-i18n="f_mixer_title">Scene mixer</h3><p data-i18n="f_mixer_text">Arrange layers on the picture: your camera, the chat, a widget page and a cover plate for "starting soon".</p></article>
+      <article><span>💬</span><h3 data-i18n="f_chat_title">Chat you can answer</h3><p data-i18n="f_chat_text">Read and reply to YouTube and Twitch chat from inside the app, with every account in one stream.</p></article>
       <article><span>🌐</span><h3 data-i18n="f_multi_title">Multi-platform streaming</h3><p data-i18n="f_multi_text">Broadcast to several platforms and custom destinations simultaneously.</p></article>
       <article><span>👤</span><h3 data-i18n="f_accounts_title">Multiple accounts</h3><p data-i18n="f_accounts_text">Use multiple accounts from the same platform in one application.</p></article>
       <article><span>📱</span><h3 data-i18n="f_sources_title">Camera, screen, file</h3><p data-i18n="f_sources_text">Stream from camera, screen capture or a local video file.</p></article>
-      <article><span>🎙️</span><h3 data-i18n="f_audio_title">Audio control</h3><p data-i18n="f_audio_text">Microphone, internal audio and mixed audio scenarios.</p></article>
-      <article><span>⚡</span><h3 data-i18n="f_quality_title">Professional quality</h3><p data-i18n="f_quality_text">Resolution, FPS, bitrate and audio bitrate are fully configurable.</p></article>
+      <article><span>🌡️</span><h3 data-i18n="f_strain_title">Survives a long stream</h3><p data-i18n="f_strain_text">The bitrate follows your network, and you hear about heat and battery before your viewers see it.</p></article>
+      <article><span>🎙️</span><h3 data-i18n="f_audio_title">Audio control</h3><p data-i18n="f_audio_text">Microphone, game sound and mixed audio, with Bluetooth headsets supported.</p></article>
       <article><span>🔐</span><h3 data-i18n="f_secure_title">Secure setup</h3><p data-i18n="f_secure_text">OAuth for supported platforms and hidden stream keys for custom destinations.</p></article>
     </div>
   </section>
 
   <section class="section wrap platform-section">
     <h2 data-i18n="platforms_title">Supported platforms and protocols</h2>
-    <div class="platforms"><span>YouTube</span><span>Twitch</span><span>Kick</span><span>RTMP</span><span>RTSP</span><span>SRT</span><span>UDP</span><span data-i18n="soon">More soon</span></div>
+    <div class="platforms"><span>YouTube</span><span>Twitch</span><span>Kick</span><span>RTMP</span><span>RTMPS</span><span>RTSP</span><span>SRT</span><span>UDP</span><span data-i18n="soon">More soon</span></div>
   </section>
 
   <section id="screens" class="section wrap">
@@ -112,10 +115,12 @@
     <div class="compare-grid">
       <div><b data-i18n="c1">Multiple accounts per platform</b><span>✅</span></div>
       <div><b data-i18n="c2">Multiple destinations at once</b><span>✅</span></div>
-      <div><b>RTMP / RTSP / SRT / UDP</b><span>✅</span></div>
+      <div><b>RTMP / RTMPS / RTSP / SRT / UDP</b><span>✅</span></div>
       <div><b data-i18n="c4">Camera, screen and video file</b><span>✅</span></div>
-      <div><b data-i18n="c5">Mobile-first Android interface</b><span>✅</span></div>
+      <div><b data-i18n="c5">Panel over the game</b><span>✅</span></div>
       <div><b data-i18n="c6">Local recording option</b><span>✅</span></div>
+      <div><b data-i18n="c7">Scene mixer with layers</b><span>✅</span></div>
+      <div><b data-i18n="c8">Chat read and answered in app</b><span>✅</span></div>
     </div>
   </section>
 
@@ -161,6 +166,6 @@
     </div>
   </footer>
 
-  <script src="js/app.js?v=19"></script>
+  <script src="js/app.js?v=21"></script>
 </body>
 </html>

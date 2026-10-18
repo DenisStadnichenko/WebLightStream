@@ -4,24 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Features — StadFlow</title>
-    <meta name="description" content="All StadFlow features: multi-platform streaming, multiple accounts per service, camera/screen/file sources, audio control and pro quality settings." />
+    <meta name="description" content="All StadFlow features: a panel over the game, a scene mixer with layers, chat you can answer, multi-platform streaming and multiple accounts per service." />
   <meta name="theme-color" content="#090218" />
   <link rel="canonical" href="https://stadflow-el-moloko-s-projects.vercel.app/features.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="StadFlow" />
   <meta property="og:title" content="Features — StadFlow" />
-  <meta property="og:description" content="All StadFlow features: multi-platform streaming, multiple accounts per service, camera/screen/file sources, audio control and pro quality settings." />
+  <meta property="og:description" content="All StadFlow features: a panel over the game, a scene mixer with layers, chat you can answer, multi-platform streaming and multiple accounts per service." />
   <meta property="og:url" content="https://stadflow-el-moloko-s-projects.vercel.app/features.html" />
   <meta property="og:image" content="https://stadflow-el-moloko-s-projects.vercel.app/assets/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Features — StadFlow" />
-  <meta name="twitter:description" content="All StadFlow features: multi-platform streaming, multiple accounts per service, camera/screen/file sources, audio control and pro quality settings." />
+  <meta name="twitter:description" content="All StadFlow features: a panel over the game, a scene mixer with layers, chat you can answer, multi-platform streaming and multiple accounts per service." />
   <meta name="twitter:image" content="https://stadflow-el-moloko-s-projects.vercel.app/assets/og.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=19" />
+  <link rel="stylesheet" href="styles.css?v=21" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
@@ -47,11 +47,26 @@
     <p class="eyebrow" data-i18n="features_eyebrow">Everything you need</p>
     <h1 data-i18n="features_title">A complete mobile streaming studio</h1>
 
-    <div class="grid cards" style="margin-top: 60px;">
+        <div class="grid cards" style="margin-top: 60px;">
+      <article>
+        <span>🎮</span>
+        <h3 data-i18n="f_game_title">Built for streaming games</h3>
+        <p data-i18n="f_game_text_long">The streamer is in the game and the app is behind it. A panel floats over your gameplay: start and stop, mute the mic, watch the health of every destination and read the chat without ever leaving the game.</p>
+      </article>
+      <article>
+        <span>🎛️</span>
+        <h3 data-i18n="f_mixer_title">Scene mixer</h3>
+        <p data-i18n="f_mixer_text_long">Lay your camera, the chat, a widget page and a cover plate over the picture, then drag, resize and reorder them. Each layer has two independent audiences: what the viewers see and what you see on your own screen.</p>
+      </article>
+      <article>
+        <span>💬</span>
+        <h3 data-i18n="f_chat_title">Chat you can answer</h3>
+        <p data-i18n="f_chat_text_long">YouTube and Twitch chat is read inside the app and shown as a layer, and you can reply without opening another app. Every connected account appears in one stream of messages.</p>
+      </article>
       <article>
         <span>🌐</span>
         <h3 data-i18n="f_multi_title">Multi-platform streaming</h3>
-        <p data-i18n="f_multi_text">Broadcast to several platforms and custom destinations simultaneously. Support for RTMP, RTSP, SRT, and UDP protocols ensures compatibility with almost any service.</p>
+        <p data-i18n="f_multi_text">Broadcast to several platforms and custom destinations simultaneously. Support for RTMP, RTMPS, RTSP, SRT and UDP protocols ensures compatibility with almost any service.</p>
       </article>
       <article>
         <span>👤</span>
@@ -61,12 +76,17 @@
       <article>
         <span>📱</span>
         <h3 data-i18n="f_sources_title">Camera, screen, file</h3>
-        <p data-i18n="f_sources_text">Flexible source management. Toggle between front/rear camera, capture your gameplay screen, or stream a pre-recorded video file directly.</p>
+        <p data-i18n="f_sources_text">Flexible source management. Toggle between front/rear camera, capture your gameplay screen, or stream a pre-recorded video or audio file directly.</p>
+      </article>
+      <article>
+        <span>🌡️</span>
+        <h3 data-i18n="f_strain_title">Survives a long stream</h3>
+        <p data-i18n="f_strain_text_long">The bitrate follows the network instead of demanding a fixed number, and the app watches the phone's heat and battery — you are warned before the picture starts to stutter.</p>
       </article>
       <article>
         <span>🎙️</span>
         <h3 data-i18n="f_audio_title">Audio control</h3>
-        <p data-i18n="f_audio_text">Professional audio routing. Mix microphone input with internal system sound. Support for Bluetooth headsets and external USB interfaces.</p>
+        <p data-i18n="f_audio_text">Professional audio routing. Mix microphone input with the game's sound. Support for Bluetooth headsets and external USB interfaces.</p>
       </article>
       <article>
         <span>⚡</span>
@@ -74,9 +94,19 @@
         <p data-i18n="f_quality_text">Up to 1080p at 60 FPS with video bitrate up to 8 Mbps. Hardware-accelerated encoding keeps the phone cool and the stream stable on mobile networks.</p>
       </article>
       <article>
+        <span>💾</span>
+        <h3 data-i18n="f_record_title">Local recording</h3>
+        <p data-i18n="f_record_text">Keep a copy of every broadcast on the device while you stream, saved to the Movies folder.</p>
+      </article>
+      <article>
         <span>🔐</span>
         <h3 data-i18n="f_secure_title">Secure setup</h3>
         <p data-i18n="f_secure_text">Native OAuth 2.0 sign-in for YouTube, Twitch and Kick. Your passwords are never entered in the app. Tokens and stream keys are stored encrypted on your device.</p>
+      </article>
+      <article>
+        <span>🚀</span>
+        <h3 data-i18n="f_free_title">Free where it matters</h3>
+        <p data-i18n="f_free_text">The whole loop works for free: a destination, the panel, the mixer, the camera in the frame, chat read and answered. PRO lifts the limits, it does not unlock the basics.</p>
       </article>
     </div>
 
@@ -114,6 +144,6 @@
     </div>
   </footer>
 
-  <script src="js/app.js?v=19"></script>
+  <script src="js/app.js?v=21"></script>
 </body>
 </html>

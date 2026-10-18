@@ -21,7 +21,7 @@
   <meta name="twitter:image" content="https://stadflow-el-moloko-s-projects.vercel.app/assets/og.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=19" />
+  <link rel="stylesheet" href="styles.css?v=21" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
@@ -49,87 +49,143 @@
 
     <div class="roadmap-list" data-i18n-block="list">
         <div class="roadmap-item">
-            <span class="roadmap-status status-done" data-i18n="roadmap_done">Done</span>
+            <span class="roadmap-status status-done">Done</span>
             <div>
                 <h3>Multi-destination streaming</h3>
-                <p>Stream to several platforms and custom RTMP, RTMPS, RTSP, SRT and UDP servers at the same time.</p>
+                <p>Several platforms and custom RTMP, RTMPS, RTSP, SRT and UDP servers at the same time, each destination reconnecting on its own.</p>
             </div>
         </div>
         <div class="roadmap-item">
-            <span class="roadmap-status status-done" data-i18n="roadmap_done">Done</span>
+            <span class="roadmap-status status-done">Done</span>
             <div>
                 <h3>Multiple accounts per platform</h3>
-                <p>Add several YouTube, Twitch and Kick accounts and pick which ones go live for each stream.</p>
+                <p>Several YouTube, Twitch and Kick accounts, enabled per stream.</p>
             </div>
         </div>
         <div class="roadmap-item">
-            <span class="roadmap-status status-done" data-i18n="roadmap_done">Done</span>
+            <span class="roadmap-status status-done">Done</span>
             <div>
-                <h3>YouTube, Twitch & Kick OAuth</h3>
-                <p>Native sign-in for all three platforms with automatic stream key retrieval and token refresh.</p>
+                <h3>YouTube, Twitch &amp; Kick OAuth</h3>
+                <p>Native sign-in for all three, with automatic stream key retrieval and token refresh.</p>
             </div>
         </div>
         <div class="roadmap-item">
-            <span class="roadmap-status status-done" data-i18n="roadmap_done">Done</span>
+            <span class="roadmap-status status-done">Done</span>
+            <div>
+                <h3>Scene mixer with layers</h3>
+                <p>Camera, chat, a widget page and a cover plate, arranged on the picture — each layer shown to the viewers, to the streamer, or to both.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-done">Done</span>
+            <div>
+                <h3>Panel over the game</h3>
+                <p>Start, stop, mute, destination health and chat, reachable without leaving the game.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-done">Done</span>
+            <div>
+                <h3>YouTube and Twitch chat</h3>
+                <p>Read in the app, shown as a layer and answered while live.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-done">Done</span>
             <div>
                 <h3>Camera, screen and file sources</h3>
-                <p>Front/rear camera with zoom, screen capture with internal audio, and streaming from a local video file.</p>
+                <p>Front/rear camera with zoom and mirroring, screen capture with game sound, and local video or audio files.</p>
             </div>
         </div>
         <div class="roadmap-item">
-            <span class="roadmap-status status-done" data-i18n="roadmap_done">Done</span>
+            <span class="roadmap-status status-done">Done</span>
+            <div>
+                <h3>Bitrate that follows the network</h3>
+                <p>The stream adapts instead of demanding a fixed number, and a destination that does not answer ends with a message instead of a spinner.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-done">Done</span>
+            <div>
+                <h3>Heat and battery warnings</h3>
+                <p>The quality steps down and the streamer is told before the viewers see it.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-done">Done</span>
             <div>
                 <h3>Local recording</h3>
-                <p>Save a copy of every stream to Movies/StadFlow while broadcasting.</p>
+                <p>A copy of every broadcast saved to the device while streaming.</p>
             </div>
         </div>
         <div class="roadmap-item">
-            <span class="roadmap-status status-done" data-i18n="roadmap_done">Done</span>
-            <div>
-                <h3>Auto-reconnect</h3>
-                <p>Every destination reconnects on its own when the network drops.</p>
-            </div>
-        </div>
-        <div class="roadmap-item">
-            <span class="roadmap-status status-progress" data-i18n="roadmap_progress">In progress</span>
+            <span class="roadmap-status status-progress">In progress</span>
             <div>
                 <h3>Google Play release</h3>
-                <p>Publishing StadFlow on Google Play with in-app Pro subscription.</p>
+                <p>Publishing StadFlow with PRO as a one-time in-app purchase.</p>
             </div>
         </div>
         <div class="roadmap-item">
-            <span class="roadmap-status status-next" data-i18n="roadmap_next">Next</span>
+            <span class="roadmap-status status-next">Next</span>
             <div>
-                <h3>Overlay system</h3>
-                <p>Add images, text labels and widgets directly onto your mobile stream.</p>
+                <h3>Title and category from the app</h3>
+                <p>Set what the stream is called and what it is filed under, without opening a browser.</p>
             </div>
         </div>
         <div class="roadmap-item">
-            <span class="roadmap-status status-next" data-i18n="roadmap_next">Next</span>
+            <span class="roadmap-status status-next">Next</span>
             <div>
-                <h3>Chat viewer</h3>
-                <p>See YouTube, Twitch and Kick chat inside the app while streaming.</p>
+                <h3>Viewer count on the panel</h3>
+                <p>How many people are watching, where the streamer is already looking.</p>
             </div>
         </div>
         <div class="roadmap-item">
-            <span class="roadmap-status status-next" data-i18n="roadmap_next">Next</span>
+            <span class="roadmap-status status-next">Next</span>
             <div>
-                <h3>Per-destination quality</h3>
-                <p>Send a different bitrate or resolution to each destination.</p>
+                <h3>Calls, alarms and a pulled headset</h3>
+                <p>An interrupted microphone is announced and falls back instead of streaming in silence.</p>
             </div>
         </div>
         <div class="roadmap-item">
-            <span class="roadmap-status status-next" data-i18n="roadmap_next">Next</span>
+            <span class="roadmap-status status-next">Next</span>
             <div>
-                <h3>Remote control</h3>
-                <p>Start, stop and switch scenes from another device or a browser.</p>
+                <h3>Checking a destination before going live</h3>
+                <p>A probe that says whether a server answers, before there is an audience.</p>
             </div>
         </div>
         <div class="roadmap-item">
-            <span class="roadmap-status status-next" data-i18n="roadmap_next">Next</span>
+            <span class="roadmap-status status-next">Next</span>
             <div>
-                <h3>More platforms</h3>
-                <p>Native integrations for Facebook Live, TikTok LIVE and VK Video.</p>
+                <h3>Microphone level meter</h3>
+                <p>A moving bar that proves sound is arriving.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-next">Next</span>
+            <div>
+                <h3>Discord notification</h3>
+                <p>One webhook, one message when the stream begins.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-next">Next</span>
+            <div>
+                <h3>Kick chat</h3>
+                <p>Streaming to Kick works; its chat has no source yet.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-next">Next</span>
+            <div>
+                <h3>More layer kinds</h3>
+                <p>Images, gifs, stickers and text, beyond camera, chat, web page and cover plate.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-next">Next</span>
+            <div>
+                <h3>A recap when the stream stops</h3>
+                <p>How long it ran, the best and worst of the bitrate, reconnects, heat and battery.</p>
             </div>
         </div>
     </div>
@@ -163,7 +219,7 @@
     </div>
   </footer>
 
-  <script src="js/i18n/roadmap.js?v=19"></script>
-  <script src="js/app.js?v=19"></script>
+  <script src="js/i18n/roadmap.js?v=21"></script>
+  <script src="js/app.js?v=21"></script>
 </body>
 </html>

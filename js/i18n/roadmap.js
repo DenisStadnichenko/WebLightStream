@@ -4,84 +4,140 @@ window.PAGE_I18N = {
             <span class="roadmap-status status-done">Готово</span>
             <div>
                 <h3>Мультиплатформенный стриминг</h3>
-                <p>Трансляция на несколько платформ и собственные RTMP, RTMPS, RTSP, SRT и UDP серверы одновременно.</p>
+                <p>Несколько платформ и собственные RTMP, RTMPS, RTSP, SRT и UDP серверы одновременно, каждое назначение переподключается само.</p>
             </div>
         </div>
         <div class="roadmap-item">
             <span class="roadmap-status status-done">Готово</span>
             <div>
                 <h3>Несколько аккаунтов на платформу</h3>
-                <p>Добавляйте несколько аккаунтов YouTube, Twitch и Kick и выбирайте, какие выходят в эфир для каждого стрима.</p>
+                <p>Несколько аккаунтов YouTube, Twitch и Kick, включаются для каждого эфира отдельно.</p>
             </div>
         </div>
         <div class="roadmap-item">
             <span class="roadmap-status status-done">Готово</span>
             <div>
                 <h3>OAuth для YouTube, Twitch и Kick</h3>
-                <p>Нативный вход во все три платформы с автоматическим получением ключа трансляции и обновлением токенов.</p>
+                <p>Нативный вход во все три платформы с автоматическим получением ключа и обновлением токенов.</p>
             </div>
         </div>
         <div class="roadmap-item">
             <span class="roadmap-status status-done">Готово</span>
             <div>
-                <h3>Камера, экран и видеофайл</h3>
-                <p>Фронтальная и основная камера с зумом, захват экрана с внутренним звуком и стрим из локального видеофайла.</p>
+                <h3>Микшер сцены со слоями</h3>
+                <p>Камера, чат, виджет-страница и заставка, расставленные на картинке — каждый слой виден зрителям, стримеру или обоим.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-done">Готово</span>
+            <div>
+                <h3>Панель поверх игры</h3>
+                <p>Старт, стоп, микрофон, состояние назначений и чат — не выходя из игры.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-done">Готово</span>
+            <div>
+                <h3>Чат YouTube и Twitch</h3>
+                <p>Читается в приложении, выводится слоем и отвечается прямо в эфире.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-done">Готово</span>
+            <div>
+                <h3>Камера, экран и файлы</h3>
+                <p>Фронтальная и основная камера с зумом и зеркалированием, захват экрана со звуком игры, локальные видео- и аудиофайлы.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-done">Готово</span>
+            <div>
+                <h3>Битрейт по состоянию сети</h3>
+                <p>Поток подстраивается вместо фиксированного числа, а не отвечающее назначение завершается сообщением, а не вечным спиннером.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-done">Готово</span>
+            <div>
+                <h3>Предупреждения о нагреве и батарее</h3>
+                <p>Качество снижается само, и стример узнаёт об этом раньше зрителей.</p>
             </div>
         </div>
         <div class="roadmap-item">
             <span class="roadmap-status status-done">Готово</span>
             <div>
                 <h3>Локальная запись</h3>
-                <p>Сохранение копии каждого эфира в Movies/StadFlow прямо во время трансляции.</p>
-            </div>
-        </div>
-        <div class="roadmap-item">
-            <span class="roadmap-status status-done">Готово</span>
-            <div>
-                <h3>Автопереподключение</h3>
-                <p>Каждое назначение переподключается само при потере соединения.</p>
+                <p>Копия каждого эфира сохраняется на устройство прямо во время трансляции.</p>
             </div>
         </div>
         <div class="roadmap-item">
             <span class="roadmap-status status-progress">В работе</span>
             <div>
                 <h3>Релиз в Google Play</h3>
-                <p>Публикация StadFlow в Google Play с подпиской Pro внутри приложения.</p>
+                <p>Публикация StadFlow с PRO как разовой покупкой внутри приложения.</p>
             </div>
         </div>
         <div class="roadmap-item">
             <span class="roadmap-status status-next">Далее</span>
             <div>
-                <h3>Система оверлеев</h3>
-                <p>Добавление изображений, текста и виджетов прямо в мобильный эфир.</p>
+                <h3>Название и категория из приложения</h3>
+                <p>Задать, как называется эфир и в каком разделе он лежит, не открывая браузер.</p>
             </div>
         </div>
         <div class="roadmap-item">
             <span class="roadmap-status status-next">Далее</span>
             <div>
-                <h3>Просмотр чата</h3>
-                <p>Чат YouTube, Twitch и Kick прямо в приложении во время стрима.</p>
+                <h3>Счётчик зрителей на панели</h3>
+                <p>Сколько человек смотрит — там, куда стример и так смотрит.</p>
             </div>
         </div>
         <div class="roadmap-item">
             <span class="roadmap-status status-next">Далее</span>
             <div>
-                <h3>Качество для каждого назначения</h3>
-                <p>Отдельный битрейт и разрешение для каждой площадки.</p>
+                <h3>Звонки, будильники и выдернутая гарнитура</h3>
+                <p>Прерванный микрофон объявляется и переключается, а не уходит в тишину.</p>
             </div>
         </div>
         <div class="roadmap-item">
             <span class="roadmap-status status-next">Далее</span>
             <div>
-                <h3>Удалённое управление</h3>
-                <p>Запуск, остановка и переключение сцен с другого устройства или из браузера.</p>
+                <h3>Проверка назначения до эфира</h3>
+                <p>Проба, которая скажет, отвечает ли сервер, пока зрителей ещё нет.</p>
             </div>
         </div>
         <div class="roadmap-item">
             <span class="roadmap-status status-next">Далее</span>
             <div>
-                <h3>Больше платформ</h3>
-                <p>Нативные интеграции с Facebook Live, TikTok LIVE и VK Video.</p>
+                <h3>Индикатор уровня микрофона</h3>
+                <p>Живая шкала, которая доказывает, что звук идёт.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-next">Далее</span>
+            <div>
+                <h3>Уведомление в Discord</h3>
+                <p>Один вебхук и одно сообщение в начале эфира.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-next">Далее</span>
+            <div>
+                <h3>Чат Kick</h3>
+                <p>Трансляция на Kick работает, у чата пока нет источника.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-next">Далее</span>
+            <div>
+                <h3>Больше типов слоёв</h3>
+                <p>Картинки, гифки, стикеры и текст — помимо камеры, чата, веб-страницы и заставки.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-next">Далее</span>
+            <div>
+                <h3>Итоги после эфира</h3>
+                <p>Сколько шёл, лучший и худший битрейт, переподключения, нагрев и расход батареи.</p>
             </div>
         </div>
 ` },
@@ -90,84 +146,140 @@ window.PAGE_I18N = {
             <span class="roadmap-status status-done">Готово</span>
             <div>
                 <h3>Мультиплатформний стримінг</h3>
-                <p>Трансляція на кілька платформ і власні RTMP, RTMPS, RTSP, SRT та UDP сервери одночасно.</p>
+                <p>Кілька платформ і власні RTMP, RTMPS, RTSP, SRT та UDP сервери одночасно, кожен напрямок перепідключається сам.</p>
             </div>
         </div>
         <div class="roadmap-item">
             <span class="roadmap-status status-done">Готово</span>
             <div>
                 <h3>Кілька акаунтів на платформу</h3>
-                <p>Додавайте кілька акаунтів YouTube, Twitch і Kick та обирайте, які виходять в ефір для кожного стриму.</p>
+                <p>Кілька акаунтів YouTube, Twitch і Kick, вмикаються для кожного ефіру окремо.</p>
             </div>
         </div>
         <div class="roadmap-item">
             <span class="roadmap-status status-done">Готово</span>
             <div>
                 <h3>OAuth для YouTube, Twitch і Kick</h3>
-                <p>Нативний вхід у всі три платформи з автоматичним отриманням ключа трансляції та оновленням токенів.</p>
+                <p>Нативний вхід у всі три платформи з автоматичним отриманням ключа та оновленням токенів.</p>
             </div>
         </div>
         <div class="roadmap-item">
             <span class="roadmap-status status-done">Готово</span>
             <div>
-                <h3>Камера, екран і відеофайл</h3>
-                <p>Фронтальна й основна камера із зумом, запис екрана з внутрішнім звуком і стрим із локального відеофайлу.</p>
+                <h3>Мікшер сцени з шарами</h3>
+                <p>Камера, чат, віджет-сторінка та заставка, розставлені на картинці — кожен шар видно глядачам, стримеру або обом.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-done">Готово</span>
+            <div>
+                <h3>Панель поверх гри</h3>
+                <p>Старт, стоп, мікрофон, стан напрямків і чат — не виходячи з гри.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-done">Готово</span>
+            <div>
+                <h3>Чат YouTube і Twitch</h3>
+                <p>Читається в застосунку, виводиться шаром і відповідається просто в ефірі.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-done">Готово</span>
+            <div>
+                <h3>Камера, екран і файли</h3>
+                <p>Фронтальна й основна камера із зумом і дзеркаленням, запис екрана зі звуком гри, локальні відео- та аудіофайли.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-done">Готово</span>
+            <div>
+                <h3>Бітрейт за станом мережі</h3>
+                <p>Потік підлаштовується замість фіксованого числа, а напрямок, що не відповідає, завершується повідомленням, а не вічним спінером.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-done">Готово</span>
+            <div>
+                <h3>Попередження про нагрів і батарею</h3>
+                <p>Якість знижується сама, і стример дізнається про це раніше за глядачів.</p>
             </div>
         </div>
         <div class="roadmap-item">
             <span class="roadmap-status status-done">Готово</span>
             <div>
                 <h3>Локальний запис</h3>
-                <p>Збереження копії кожного ефіру в Movies/StadFlow просто під час трансляції.</p>
-            </div>
-        </div>
-        <div class="roadmap-item">
-            <span class="roadmap-status status-done">Готово</span>
-            <div>
-                <h3>Автоперепідключення</h3>
-                <p>Кожен напрямок перепідключається сам при втраті з'єднання.</p>
+                <p>Копія кожного ефіру зберігається на пристрій просто під час трансляції.</p>
             </div>
         </div>
         <div class="roadmap-item">
             <span class="roadmap-status status-progress">У роботі</span>
             <div>
                 <h3>Реліз у Google Play</h3>
-                <p>Публікація StadFlow у Google Play з підпискою Pro всередині застосунку.</p>
+                <p>Публікація StadFlow з PRO як разовою покупкою всередині застосунку.</p>
             </div>
         </div>
         <div class="roadmap-item">
             <span class="roadmap-status status-next">Далі</span>
             <div>
-                <h3>Система оверлеїв</h3>
-                <p>Додавання зображень, тексту та віджетів просто в мобільний ефір.</p>
+                <h3>Назва та категорія із застосунку</h3>
+                <p>Задати, як називається ефір і в якому розділі він лежить, не відкриваючи браузер.</p>
             </div>
         </div>
         <div class="roadmap-item">
             <span class="roadmap-status status-next">Далі</span>
             <div>
-                <h3>Перегляд чату</h3>
-                <p>Чат YouTube, Twitch і Kick просто в застосунку під час стриму.</p>
+                <h3>Лічильник глядачів на панелі</h3>
+                <p>Скільки людей дивиться — там, куди стример і так дивиться.</p>
             </div>
         </div>
         <div class="roadmap-item">
             <span class="roadmap-status status-next">Далі</span>
             <div>
-                <h3>Якість для кожного напрямку</h3>
-                <p>Окремий бітрейт і роздільна здатність для кожного майданчика.</p>
+                <h3>Дзвінки, будильники та висмикнута гарнітура</h3>
+                <p>Перерваний мікрофон оголошується та перемикається, а не йде в тишу.</p>
             </div>
         </div>
         <div class="roadmap-item">
             <span class="roadmap-status status-next">Далі</span>
             <div>
-                <h3>Віддалене керування</h3>
-                <p>Запуск, зупинка та перемикання сцен з іншого пристрою або з браузера.</p>
+                <h3>Перевірка напрямку до ефіру</h3>
+                <p>Проба, яка скаже, чи відповідає сервер, поки глядачів ще немає.</p>
             </div>
         </div>
         <div class="roadmap-item">
             <span class="roadmap-status status-next">Далі</span>
             <div>
-                <h3>Більше платформ</h3>
-                <p>Нативні інтеграції з Facebook Live, TikTok LIVE та VK Video.</p>
+                <h3>Індикатор рівня мікрофона</h3>
+                <p>Жива шкала, яка доводить, що звук іде.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-next">Далі</span>
+            <div>
+                <h3>Сповіщення в Discord</h3>
+                <p>Один вебхук і одне повідомлення на початку ефіру.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-next">Далі</span>
+            <div>
+                <h3>Чат Kick</h3>
+                <p>Трансляція на Kick працює, у чату поки немає джерела.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-next">Далі</span>
+            <div>
+                <h3>Більше типів шарів</h3>
+                <p>Картинки, гіфки, стікери й текст — окрім камери, чату, вебсторінки та заставки.</p>
+            </div>
+        </div>
+        <div class="roadmap-item">
+            <span class="roadmap-status status-next">Далі</span>
+            <div>
+                <h3>Підсумки після ефіру</h3>
+                <p>Скільки тривав, найкращий і найгірший бітрейт, перепідключення, нагрів і витрата батареї.</p>
             </div>
         </div>
 ` }
