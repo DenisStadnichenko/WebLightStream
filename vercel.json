@@ -56,23 +56,6 @@
           "value": "public, max-age=604800"
         }
       ]
-    },
-    {
-      "source": "/stadflow.apk",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/vnd.android.package-archive"
-        },
-        {
-          "key": "Content-Disposition",
-          "value": "attachment; filename=\"stadflow.apk\""
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600"
-        }
-      ]
     }
   ]
 }
