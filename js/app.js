@@ -32,7 +32,7 @@ const dict = {
     f_cam_title:'Pro camera', f_cam_text_long:'Manual control when auto gets it wrong: exposure and exposure lock, ISO and shutter, focus distance, white balance in presets or kelvin, anti-flicker, stabilisation, noise reduction and sharpness. Free, like the rest of the craft.', c9:'Manual camera controls',
     q17:'Can I control the camera manually?', a17:'Yes. The Pro camera panel gives you exposure and exposure lock, ISO and shutter, focus distance, white balance as presets or in kelvin, anti-flicker, preview stabilisation, noise reduction and sharpness. If your lens does not support a setting, the app says so instead of pretending. It is available on the free plan.',
     f_proto_title:"Protocols don't have to match", f_proto_text:'SRT to your own server and RTMP to YouTube, in the same stream. The picture is encoded once and shared across destinations.', f_proto_text_long:'SRT to your own server and RTMP to YouTube, in the same stream. The picture is encoded once and shared across destinations, so a second one costs only its uplink — the same, whichever protocol carries it.', c10:'Different protocols in one stream', q18:'Can I run RTMP and SRT at the same time?', a18:'Yes. The protocol belongs to each destination, not to the stream. A common setup is SRT to your own relay, which holds the picture together on a weak mobile network, and RTMP to the platform, which is all the platforms accept. Nothing has to be switched on for this — it is the ordinary way it works.',
-    tg_channel:'Telegram channel', tg_title:'Telegram', tg_text:'The fastest way to reach us: news about new builds, and a place to send feedback, bug reports and feature requests.',
+    tg_channel:'Telegram channel', tg_title:'Telegram', tg_text:'What each release changes, what is being built next, and early builds to test before they go out. Feedback, bug reports and feature requests are welcome there too.',
     get_play:'Coming soon on Google Play', soon_play:'Coming soon on Google Play', dl_note:'Android 8.0+ · v1.0.0 · coming soon on Google Play', download:'Get the app',
     changelog_title:'What\'s New', changelog_latest:'Latest Version'
   },
@@ -69,7 +69,7 @@ const dict = {
     f_cam_title:'Проф. камера', f_cam_text_long:'Ручное управление там, где автоматика ошибается: экспозиция и её фиксация, ISO и выдержка, дистанция фокуса, баланс белого пресетами или в кельвинах, подавление мерцания, стабилизация, шумоподавление и резкость. Бесплатно, как и остальное мастерство.', c9:'Ручные настройки камеры',
     q17:'Можно управлять камерой вручную?', a17:'Да. В панели «Проф. камера» доступны экспозиция и её фиксация, ISO и выдержка, дистанция фокуса, баланс белого пресетами или в кельвинах, подавление мерцания, стабилизация превью, шумоподавление и резкость. Если объектив чего-то не умеет, приложение прямо об этом скажет. Доступно на бесплатном тарифе.',
     f_proto_title:'Протоколы не обязаны совпадать', f_proto_text:'SRT на свой сервер и RTMP на YouTube — в одной трансляции. Картинка кодируется один раз и раздаётся всем назначениям.', f_proto_text_long:'SRT на свой сервер и RTMP на YouTube — в одной трансляции. Картинка кодируется один раз и раздаётся всем назначениям, поэтому второе стоит только исходящего канала — одинаково, какой бы протокол его ни нёс.', c10:'Разные протоколы в одной трансляции', q18:'Можно ли вести RTMP и SRT одновременно?', a18:'Да. Протокол задаётся у каждого назначения отдельно, а не у трансляции. Обычный сценарий: SRT до своего relay — он лучше держит картинку на слабой мобильной сети, — и RTMP на платформу, потому что платформы принимают только его. Включать для этого ничего не нужно, это обычный режим работы.',
-    tg_channel:'Канал в Telegram', tg_title:'Telegram', tg_text:'Самый быстрый способ связаться: новости о свежих сборках и место, куда можно написать отзыв, сообщить об ошибке или предложить функцию.',
+    tg_channel:'Канал в Telegram', tg_title:'Telegram', tg_text:'Что меняет каждый релиз, что делается сейчас и сборки, которые можно попробовать раньше всех. Туда же можно написать отзыв, сообщить об ошибке или предложить функцию.',
     get_play:'Скоро в Google Play', soon_play:'Скоро в Google Play', dl_note:'Android 8.0+ · v1.0.0 · скоро в Google Play', download:'Установить',
     changelog_title:'Что нового', changelog_latest:'Последняя версия'
   },
@@ -106,7 +106,7 @@ const dict = {
     f_cam_title:'Проф. камера', f_cam_text_long:'Ручне керування там, де автоматика помиляється: експозиція та її фіксація, ISO і витримка, дистанція фокуса, баланс білого пресетами або в кельвінах, придушення мерехтіння, стабілізація, шумозаглушення та різкість. Безкоштовно, як і решта майстерності.', c9:'Ручні налаштування камери',
     q17:'Чи можна керувати камерою вручну?', a17:'Так. У панелі «Проф. камера» доступні експозиція та її фіксація, ISO і витримка, дистанція фокуса, баланс білого пресетами або в кельвінах, придушення мерехтіння, стабілізація прев’ю, шумозаглушення та різкість. Якщо об’єктив чогось не вміє, застосунок прямо про це скаже. Доступно на безкоштовному тарифі.',
     f_proto_title:'Протоколи не мусять збігатися', f_proto_text:'SRT на власний сервер і RTMP на YouTube — в одній трансляції. Картинка кодується один раз і роздається всім призначенням.', f_proto_text_long:'SRT на власний сервер і RTMP на YouTube — в одній трансляції. Картинка кодується один раз і роздається всім призначенням, тому друге коштує лише вихідного каналу — однаково, хоч би який протокол його ніс.', c10:'Різні протоколи в одній трансляції', q18:'Чи можна вести RTMP і SRT одночасно?', a18:'Так. Протокол задається в кожного призначення окремо, а не в трансляції. Звичайний сценарій: SRT до власного relay — він краще тримає картинку на слабкій мобільній мережі, — і RTMP на платформу, бо платформи приймають лише його. Вмикати для цього нічого не треба, це звичайний режим роботи.',
-    tg_channel:'Канал у Telegram', tg_title:'Telegram', tg_text:'Найшвидший спосіб зв’язатися: новини про свіжі збірки й місце, куди можна написати відгук, повідомити про помилку або запропонувати функцію.',
+    tg_channel:'Канал у Telegram', tg_title:'Telegram', tg_text:'Що змінює кожен реліз, що робиться зараз і збірки, які можна спробувати раніше за всіх. Туди ж можна написати відгук, повідомити про помилку або запропонувати функцію.',
     get_play:'Незабаром у Google Play', soon_play:'Незабаром у Google Play', dl_note:'Android 8.0+ · v1.0.0 · незабаром у Google Play', download:'Встановити',
     changelog_title:'Що нового', changelog_latest:'Остання версія'
   }
@@ -132,21 +132,6 @@ function setLang(lang){
 document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
 let saved; try{ saved = localStorage.getItem('lang'); }catch(e){}
 setLang(saved || 'en');
-
-/* The Telegram channel. Set the URL here and the links appear everywhere:
-   the footer of every page and the block on the contact page. While it is
-   empty they stay hidden, so the site never ships a dead link. */
-var TELEGRAM_URL = '';
-(function(){
-  if(!TELEGRAM_URL) return;
-  document.querySelectorAll('[data-telegram]').forEach(function(a){
-    a.href = TELEGRAM_URL;
-    a.hidden = false;
-  });
-  document.querySelectorAll('[data-telegram-box]').forEach(function(el){
-    el.hidden = false;
-  });
-})();
 
 /* ---- Motion: reading progress, nav state, scroll reveal, card spotlight ----
    Every visual effect here is additive. The .reveal class that hides an element
