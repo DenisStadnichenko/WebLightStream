@@ -74,7 +74,7 @@ window.PAGE_I18N = {
             <span class="roadmap-status status-progress">В работе</span>
             <div>
                 <h3>Релиз в Google Play</h3>
-                <p>Публикация StadFlow с PRO как разовой покупкой внутри приложения.</p>
+                <p>Публикация StadFlow с PRO как подпиской через Google Play.</p>
             </div>
         </div>
         <div class="roadmap-item">
@@ -216,7 +216,7 @@ window.PAGE_I18N = {
             <span class="roadmap-status status-progress">У роботі</span>
             <div>
                 <h3>Реліз у Google Play</h3>
-                <p>Публікація StadFlow з PRO як разовою покупкою всередині застосунку.</p>
+                <p>Публікація StadFlow з PRO як підпискою через Google Play.</p>
             </div>
         </div>
         <div class="roadmap-item">
