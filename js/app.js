@@ -1,6 +1,6 @@
 const dict = {
   en: {
-    nav_features:'Features', nav_accounts:'Accounts', nav_screens:'Screens', nav_faq:'FAQ', nav_pricing:'Pricing', nav_integrations:'Integrations',
+    nav_features:'Features', nav_accounts:'Accounts', nav_screens:'Screens', nav_faq:'FAQ', nav_pricing:'Pricing', nav_menu:'Menu', nav_menu_close:'Close menu', nav_integrations:'Integrations',
     badge:'Android live streaming studio',
     hero_title:'Professional mobile streaming. One app. Unlimited destinations.',
     hero_text:'Stream to YouTube, Twitch, Kick and any RTMP, RTSP, SRT or UDP server — to several at once, even over different protocols. Add multiple accounts for every platform and go live to several channels at the same time.',
@@ -37,7 +37,7 @@ const dict = {
     changelog_title:'What\'s New', changelog_latest:'Latest Version'
   },
   ru: {
-    nav_features:'Возможности', nav_accounts:'Аккаунты', nav_screens:'Экраны', nav_faq:'FAQ', nav_pricing:'Цены', nav_integrations:'Интеграции',
+    nav_features:'Возможности', nav_accounts:'Аккаунты', nav_screens:'Экраны', nav_faq:'FAQ', nav_pricing:'Цены', nav_menu:'Меню', nav_menu_close:'Закрыть меню', nav_integrations:'Интеграции',
     badge:'Android-студия для прямых эфиров',
     hero_title:'Профессиональный мобильный стриминг. Одно приложение. Безлимитные назначения.',
     hero_text:'Стримьте на YouTube, Twitch, Kick и любые RTMP, RTSP, SRT или UDP серверы — сразу на несколько и даже по разным протоколам. Добавляйте несколько аккаунтов для каждой платформы и запускайте эфир сразу на несколько каналов.',
@@ -74,7 +74,7 @@ const dict = {
     changelog_title:'Что нового', changelog_latest:'Последняя версия'
   },
   uk: {
-    nav_features:'Можливості', nav_accounts:'Акаунти', nav_screens:'Екрани', nav_faq:'FAQ', nav_pricing:'Ціни', nav_integrations:'Інтеграції',
+    nav_features:'Можливості', nav_accounts:'Акаунти', nav_screens:'Екрани', nav_faq:'FAQ', nav_pricing:'Ціни', nav_menu:'Меню', nav_menu_close:'Закрити меню', nav_integrations:'Інтеграції',
     badge:'Android-студія для прямих ефірів',
     hero_title:'Професійний мобільний стримінг. Один застосунок. Необмежені напрямки.',
     hero_text:'Транслюйте на YouTube, Twitch, Kick та будь-які RTMP, RTSP, SRT або UDP сервери — одразу на кілька й навіть різними протоколами. Додавайте кілька акаунтів для кожної платформи й виходьте в ефір одразу на кілька каналів.',
@@ -128,6 +128,9 @@ function setLang(lang){
   document.querySelectorAll('[data-i18n]').forEach(el=>{ const key=el.dataset.i18n; if(strings[key]){ if(el.children.length) el.innerHTML=strings[key].replace(/Help Center|Центр помощи|Центр допомоги/i, m=>'<a href="support.html">'+m+'</a>').replace(/contact us|напишите нам|напишіть нам|Tell us/i, m=>'<a href="contact.html">'+m+'</a>'); else el.textContent=strings[key]; } });
   applyBlocks(lang);
   document.querySelectorAll('[data-lang]').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));
+  /* The menu button carries no text, so its name has to be set by hand. */
+  const nav=document.querySelector('.nav'), tog=document.querySelector('.nav-toggle');
+  if(tog) tog.setAttribute('aria-label', nav && nav.classList.contains('open') ? strings.nav_menu_close : strings.nav_menu);
 }
 document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
 let saved; try{ saved = localStorage.getItem('lang'); }catch(e){}
@@ -209,4 +212,46 @@ setLang(saved || 'en');
 
   /* If anything above goes wrong, never leave the page blank. */
   setTimeout(showAll, 2000);
+})();
+
+/* ---- The menu under 980px ----
+   The links live in the markup either way; this only folds them into a panel
+   and opens it. Without JS the panel stays closed on a narrow screen, which
+   is what the page did before the button existed. */
+(function(){
+  var nav = document.querySelector('.nav');
+  var toggle = nav && nav.querySelector('.nav-toggle');
+  if(!nav || !toggle) return;
+
+  function setOpen(open){
+    nav.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    var strings = dict[document.documentElement.lang] || dict.en;
+    toggle.setAttribute('aria-label', open ? strings.nav_menu_close : strings.nav_menu);
+  }
+
+  toggle.addEventListener('click', function(){
+    setOpen(!nav.classList.contains('open'));
+  });
+
+  /* A link inside the panel either leaves the page or jumps to an anchor on
+     it. In both cases an open panel is in the way, so close it. */
+  nav.querySelectorAll('.nav-links a, .lang button').forEach(function(el){
+    el.addEventListener('click', function(){ setOpen(false); });
+  });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && nav.classList.contains('open')){ setOpen(false); toggle.focus(); }
+  });
+
+  document.addEventListener('click', function(e){
+    if(nav.classList.contains('open') && !nav.contains(e.target)) setOpen(false);
+  });
+
+  /* Turning a phone sideways can cross the breakpoint with the panel open,
+     and above it the panel is not a panel any more. */
+  var wide = window.matchMedia('(min-width:981px)');
+  var onChange = function(e){ if(e.matches) setOpen(false); };
+  if(wide.addEventListener) wide.addEventListener('change', onChange);
+  else if(wide.addListener) wide.addListener(onChange);
 })();

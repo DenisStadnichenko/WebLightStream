@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:wght@400..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=34" />
+  <link rel="stylesheet" href="styles.css?v=35" />
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "StadFlow", "operatingSystem": "Android 8.0+", "applicationCategory": "MultimediaApplication", "description": "Mobile live streaming studio for Android built for game streaming: a panel over the game, a scene mixer with layers, chat read and answered in the app, and unlimited RTMP, RTSP, SRT or UDP destinations.", "url": "https://stadflow-el-moloko-s-projects.vercel.app/", "softwareVersion": "1.0.0", "image": "https://stadflow-el-moloko-s-projects.vercel.app/assets/og.png", "offers": [{"@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Free"}, {"@type": "Offer", "name": "PRO monthly", "category": "subscription", "price": "9.00", "priceCurrency": "USD", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "9.00", "priceCurrency": "USD", "billingDuration": 1, "billingIncrement": 1, "referenceQuantity": {"@type": "QuantitativeValue", "value": 1, "unitCode": "MON"}}}, {"@type": "Offer", "name": "PRO yearly", "category": "subscription", "price": "49.00", "priceCurrency": "USD", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "49.00", "priceCurrency": "USD", "billingDuration": 1, "billingIncrement": 1, "referenceQuantity": {"@type": "QuantitativeValue", "value": 1, "unitCode": "ANN"}}}]}</script>
 </head>
 <body>
@@ -32,7 +32,7 @@
   <nav class="nav">
     <div class="wrap nav-inner">
       <a class="brand" href="#top" aria-label="StadFlow home"><span class="brand-mark">▶</span><span>StadFlow</span></a>
-      <div class="nav-links">
+      <div class="nav-links" id="nav-links">
         <a href="index.html#features" data-i18n="nav_features">Features</a>
         <a href="index.html#accounts" data-i18n="nav_accounts">Accounts</a>
         <a href="index.html#screens" data-i18n="nav_screens">Screens</a>
@@ -42,6 +42,9 @@
       <div class="lang">
         <button data-lang="en">EN</button><button data-lang="uk">UA</button><button data-lang="ru">RU</button>
       </div>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
     </div>
   </nav>
 
@@ -186,6 +189,6 @@
     </div>
   </footer>
 
-  <script src="js/app.js?v=34"></script>
+  <script src="js/app.js?v=35"></script>
 </body>
 </html>

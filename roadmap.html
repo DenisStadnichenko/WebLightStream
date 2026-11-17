@@ -21,7 +21,7 @@
   <meta name="twitter:image" content="https://stadflow-el-moloko-s-projects.vercel.app/assets/og.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=34" />
+  <link rel="stylesheet" href="styles.css?v=35" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:wght@400..800&display=swap" rel="stylesheet">
@@ -31,7 +31,7 @@
   <nav class="nav">
     <div class="wrap nav-inner">
       <a class="brand" href="index.html"><span class="brand-mark">▶</span><span>StadFlow</span></a>
-      <div class="nav-links">
+      <div class="nav-links" id="nav-links">
         <a href="index.html#features" data-i18n="nav_features">Features</a>
         <a href="index.html#accounts" data-i18n="nav_accounts">Accounts</a>
         <a href="index.html#screens" data-i18n="nav_screens">Screens</a>
@@ -41,6 +41,9 @@
       <div class="lang">
         <button data-lang="en">EN</button><button data-lang="uk">UA</button><button data-lang="ru">RU</button>
       </div>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
     </div>
   </nav>
 
@@ -221,7 +224,7 @@
     </div>
   </footer>
 
-  <script src="js/i18n/roadmap.js?v=34"></script>
-  <script src="js/app.js?v=34"></script>
+  <script src="js/i18n/roadmap.js?v=35"></script>
+  <script src="js/app.js?v=35"></script>
 </body>
 </html>
